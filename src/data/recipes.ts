@@ -19,87 +19,64 @@ export interface Recipe {
 export const recipes: Recipe[] = [
   // 1. Cloud Bread 2.0
   {
-    id: "cloud-bread-2-0",
-    title: "Cloud Bread 2.0 (Pão Nuvem Proteico)",
-    slug: "cloud-bread-2-0",
-    imageUrl: "/assets/receitas/OIP.webp",
-    description: "Pão nuvem fofo, baixo carbo e alto em proteínas, feito com claras e iogurte grego.",
-    ingredients: [
-      "4 claras em temperatura ambiente",
-      "½ tsp cream of tartar ou 1 tsp suco de limão",
-      "3 tbsp iogurte grego",
-      "1 pitada de sal",
-      "Opcional: sementes de gergelim"
-    ],
-    instructions: [
-      "Pré-aqueça o forno a 150 °C e forre uma assadeira com papel manteiga. :contentReference[oaicite:1]{index=1}",
-      "Bata claras com sal e cream of tartar até picos firmes (~4‑5 min) :contentReference[oaicite:2]{index=2}",
-      "Misture iogurte e o restante dos ingredientes, depois incorpore as claras delicadamente :contentReference[oaicite:3]{index=3}",
-      "Modele discos (~10 cm) e leve ao forno por 25‑30 min até dourar :contentReference[oaicite:4]{index=4}",
-      "Deixe esfriar antes de servir"
-    ],
-    sensations: ["leve", "fofo", "proteico", "baixo carboidrato"],
-    time: { prep: 10, cook: 30, total: 40 },
-    servings: 3,
-    category: "entrada",
-    tags: ["gluten-free", "keto", "proteico", "snack"],
-    available: true
-  },
-  // 2. Butter Candle Dip
-  {
-    id: "butter-candle-dip",
-    title: "Butter Candle Dip (Manteiga Aromatizada)",
-    slug: "butter-candle-dip",
-    imageUrl: "/assets/receitas/OIP.webp",
-    description: "Manteiga cremosa com alho e ervas derrete sobre pães quentinhos — uma experiência divertida e saborosa.",
-    ingredients: [
-      "2 sticks (226 g) manteiga com sal, em temperatura ambiente",
-      "1 cabeça de alho ou manteiga de canela opcional",
-      "1 tbsp azeite",
-      "Pitadas de sal",
-      "Ervas frescas (tomilho, sálvia) ou canela + açúcar em pó",
-      "Pavio comestível, copinho comestível"
-    ],
-    instructions: [
-      "Misture manteiga, alho/tempero, azeite e sal até ficar homogêneo :contentReference[oaicite:5]{index=5}",
-      "Modele em copo com pavio central, refrigere até firmar :contentReference[oaicite:6]{index=6}",
-      "Acenda, coloque em pão e molhe com a manteiga derretida enquanto consome :contentReference[oaicite:7]{index=7}"
-    ],
-    sensations: ["cremoso", "aromático", "divertido"],
-    time: { prep: 10, cook: 0, total: 10 },
-    servings: 4,
-    category: "entrada",
-    tags: ["manteiga", "interativo", "aperitivo"],
-    available: true
-  },
-  // 3. Smash Burger Tacos
-  {
-    id: "smash-burger-tacos",
-    title: "Smash Burger Tacos",
-    slug: "smash-burger-tacos",
-    imageUrl: "/assets/receitas/OIP.webp",
-    description: "Taco crocante com hambúrguer 'smash' suculento, queijo derretido e molho clássico — ideia viral e prática.",
-    ingredients: [
-      "1 lb (450 g) carne moída (80% gordura)",
-      "Sal kosher e pimenta",
-      "6 tortillas de milho ou trigo",
-      "6 fatias de queijo (mussarela/American)",
-      "Pickles, cebola picada e alface",
-      "Molho tipo “burger sauce”"
-    ],
-    instructions: [
-      "Forme bolas de carne (~75 g), tempere com sal e pimenta :contentReference[oaicite:8]{index=8}",
-      "Aqueça chapa/panela em fogo alto, coloque bola e achate com tortilla sobre ela :contentReference[oaicite:9]{index=9}",
-      "Cozinhe 2 min, vire, adicione queijo, cozinhe +45 s :contentReference[oaicite:10]{index=10}",
-      "Monte tacos com alface, cebola, pickles e molho :contentReference[oaicite:11]{index=11}"
-    ],
-    sensations: ["crocante", "suculento", "confortante"],
-    time: { prep: 10, cook: 10, total: 20 },
-    servings: 6,
-    category: "principal",
-    tags: ["taco", "hambúrguer", "viral", "rápido"],
-    available: true
-  },
+  id: "cloud-bread-2-0",
+  title: "Cloud Bread 2.0 (Pão Nuvem Proteico)",
+  slug: "cloud-bread-2-0",
+  imageUrl: "/assets/receitas/OIP-1.webp",
+  description:
+    "Pão nuvem fofo, baixo carbo e alto em proteínas, feito com claras e iogurte grego.",
+  ingredients: [
+    "4 claras em temperatura ambiente",
+    "½ tsp cream of tartar ou 1 tsp suco de limão",
+    "3 tbsp iogurte grego",
+    "1 pitada de sal",
+    "Opcional: sementes de gergelim"
+  ],
+  instructions: [
+    "Pré-aqueça o forno a 150 °C e forre uma assadeira com papel manteiga.",
+    "Bata claras com sal e cream of tartar até picos firmes (~4‑5 min).",
+    "Misture iogurte e o restante dos ingredientes, depois incorpore as claras delicadamente.",
+    "Modele discos (~10 cm) e leve ao forno por 25‑30 min até dourar.",
+    "Deixe esfriar antes de servir."
+  ],
+  sensations: ["leve", "fofo", "proteico", "baixo carboidrato"],
+  time: { prep: 10, cook: 30, total: 40 },
+  servings: 3,
+  category: "entrada",
+  tags: ["gluten-free", "keto", "proteico", "snack"],
+  available: true
+},
+{
+  id: "smash-burger-tacos",
+  title: "Tacos Smash Burger (Tacos Big Mac)",
+  slug: "smash-burger-tacos",
+  imageUrl: "/assets/receitas/OIP-2.jpg",
+  description:
+    "Hambúrguer prensado direto na tortilha e grelhado até ficar crocante. Coberto com queijo derretido, picles e molho especial.",
+  ingredients: [
+    "1,5 lb de carne moída 80/20",
+    "1 colher de chá de sal",
+    "½ colher de chá de pimenta-do-reino",
+    "6 tortilhas de farinha pequenas (15 cm)",
+    "6 fatias de queijo americano (ou outro à escolha)",
+    "Alface picada, cebola picada, picles de endro",
+    "Molho de hambúrguer caseiro"
+  ],
+  instructions: [
+    "Misture carne, sal e pimenta em uma tigela média.",
+    "Disponha as tortilhas e espalhe a carne por cima formando uma camada fina.",
+    "Pré-aqueça uma frigideira com um pouco de óleo.",
+    "Coloque as tortilhas com o lado da carne voltado para baixo e pressione com uma espátula.",
+    "Grelhe 1-2 minutos por lado, vire, adicione o queijo e tampe até derreter.",
+    "Finalize com alface, cebola, picles e molho. Sirva quente."
+  ],
+  sensations: ["crocante", "suculento", "cheio de sabor", "hamburgão reinventado"],
+  time: { prep: 10, cook: 5, total: 15 },
+  servings: 6,
+  category: "prato principal",
+  tags: ["taco", "hamburguer", "bigmac", "americano", "jantar rápido"],
+  available: true
+},
   // 4. Ube Mochi Pancakes
   {
     id: "ube-mochi-pancakes",

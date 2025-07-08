@@ -40,6 +40,9 @@ function AppContent() {
               <section className="bg-white py-10">
                 <RecipeCarouselSection category="sobremesa" title="Sobremesas Irresistíveis" />
               </section>
+              <section className="bg-white py-10">
+                <RecipeCarouselSection category="prato principal" title="Sobremesas Irresistíveis" />
+              </section>
               <RecipeInfoSection />
               <SocialMediaSection />
             </main>
