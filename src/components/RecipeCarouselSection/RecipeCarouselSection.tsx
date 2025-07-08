@@ -22,7 +22,7 @@ export default function RecipeCarouselSection({ category, title }: RecipeCarouse
     ? recipes.filter(r => r.category === category)
     : recipes;
 
-  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: false });
 
   return (
     <div className="mb-16 px-4">
