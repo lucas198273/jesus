@@ -31,18 +31,16 @@ function AppContent() {
             <main className="pt-20 min-h-screen flex flex-col">
               <Hero />
               <section className="bg-white py-10">
-                <RecipeCarouselSection category="vegano" title="Receitas Veganas" />
+                <RecipeCarouselSection category="entrada" title="Entradas e Cafe" />
               </section>
               <section className="bg-white py-10">
-                <RecipeCarouselSection category="entrada" title="Entradas Deliciosas" />
-              </section>
+                <RecipeCarouselSection category="vegano" title="Vegano" />
+              </section> 
+              
+
       
-              <section className="bg-white py-10">
-                <RecipeCarouselSection category="sobremesa" title="Sobremesas Irresistíveis" />
-              </section>
-              <section className="bg-white py-10">
-                <RecipeCarouselSection category="prato principal" title="Sobremesas Irresistíveis" />
-              </section>
+            
+             
               <RecipeInfoSection />
               <SocialMediaSection />
             </main>
