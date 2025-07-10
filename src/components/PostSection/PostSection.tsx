@@ -1,6 +1,4 @@
-// src/components/PostSection/PostSection.tsx
-
-import  { useState, useEffect, useMemo } from "react";
+import { useState, useEffect, useMemo } from "react";
 import { Link } from "react-router-dom";
 import type { BlogPost } from "../../data/blogPosts";
 import { getRecentPosts } from "../../data/blogPosts";
@@ -61,28 +59,30 @@ export function PostSection({ categoriesToShow, postSlugsToShow }: PostSectionPr
           </div>
         )}
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
-          {filteredPosts.map((post) => (
-            <div
-              key={post.id}
-              className="rounded-lg shadow-md overflow-hidden hover:scale-105 transition-transform duration-300 max-w-[200px]"
-            >
-              <Link to={`/posts/${post.slug}`} aria-label={`Ler post ${post.title}`} className="block">
-                <img
-                  src={post.seoMeta.ogImage}
-                  alt={post.title}
-                  className="w-full h-32 object-cover rounded-t-lg"
-                  loading="lazy"
-                  onError={(e) => {
-                    (e.target as HTMLImageElement).src = "/fallback-image.png";
-                  }}
-                />
-                <div className="bg-secondary p-2">
-                  <h3 className="text-sm font-medium truncate text-text">{post.title}</h3>
-                </div>
-              </Link>
-            </div>
-          ))}
+        <div className="overflow-x-auto">
+          <div className="flex gap-6">
+            {filteredPosts.map((post) => (
+              <div
+                key={post.id}
+                className="rounded-lg shadow-md overflow-hidden hover:scale-105 transition-transform duration-300 min-w-[200px]"
+              >
+                <Link to={`/posts/${post.slug}`} aria-label={`Ler post ${post.title}`} className="block">
+                  <img
+                    src={post.featuredImage}
+                    alt={post.title}
+                    className="w-full h-32 object-cover rounded-t-lg"
+                    loading="lazy"
+                    onError={(e) => {
+                      (e.target as HTMLImageElement).src = "/fallback-image.png";
+                    }}
+                  />
+                  <div className="bg-secondary p-2">
+                    <h3 className="text-sm font-medium truncate text-text">{post.title}</h3>
+                  </div>
+                </Link>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

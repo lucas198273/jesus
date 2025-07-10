@@ -9,12 +9,17 @@ import SearchPage from "./components/SearchPage/SearchPage";
 import { SearchProviderWrapper } from "./components/SearchProviderWrapper/SearchProviderWrapper";
 import Hero from "./components/Hero/Hero";
 import { PostSection } from "./components/PostSection/PostSection";
+import ScrollToTopOnRouteChange from "./components/ScrollToTopOnRouteChange/ScrollToTopOnRouteChange";
 
 function AppContent() {
   return (
     <div className="min-h-screen flex flex-col bg-[#0F0F23] text-[#EAEAEA]">
+         <ScrollToTopOnRouteChange />
       <Routes>
+  
+       
         <Route path="/" element={
+
           <main className="pt-20 min-h-screen flex flex-col">
             <Hero />
             <section className="py-10">

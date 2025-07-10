@@ -501,9 +501,9 @@ export const blogPosts: BlogPost[] = [
   `,
   featuredImage: "/assets/doom/doom.jpg",
   gallery: [
-    "/public/assets/doom/doom.jpg",
-   "/public/assets/doom/doom.jpg",
-   "/public/assets/doom/doom.jpg",
+    "/assets/doom/doom.jpg",
+   "/assets/doom/doom.jpg",
+   "/assets/doom/doom.jpg",
   ],
   category: "review",
   tags: ["doom the dark ages", "doom medieval", "review fps", "2025 game"],
