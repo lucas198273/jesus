@@ -10,6 +10,7 @@ import { SearchProviderWrapper } from "./components/SearchProviderWrapper/Search
 import Hero from "./components/Hero/Hero";
 import { PostSection } from "./components/PostSection/PostSection";
 import ScrollToTopOnRouteChange from "./components/ScrollToTopOnRouteChange/ScrollToTopOnRouteChange";
+import ContactPage from "./pages/ContactPage";
 
 function AppContent() {
   return (
@@ -38,6 +39,7 @@ function AppContent() {
         <Route path="/blog" element={<BlogPage />} />
         <Route path="/posts/:slug" element={<PostDetailPage />} />
         <Route path="/busca" element={<SearchPage />} />
+        <Route path="/contact" element={<ContactPage />} />
       </Routes>
       <Footer />
     </div>
