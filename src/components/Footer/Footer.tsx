@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className="bg-black text-white py-8 px-4 mt-10">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between">
         <h2 className="text-xl font-bold mb-4 md:mb-0 drop-shadow-md text-[#E94560]">
-          Ítalo Soisa Tattoo
+          Gamer
         </h2>
 
         <div className="flex space-x-6 text-2xl">
