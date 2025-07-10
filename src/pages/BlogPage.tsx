@@ -4,12 +4,45 @@ import { ArrowUp } from "lucide-react";
 import { getPostsByCategory, getFeaturedPosts } from "../data/blogPosts";
 import type { BlogPost } from "../data/blogPosts";
 
-const CategorySection = ({ category, title }: { category: BlogPost['category'] | 'featured'; title: string }) => {
-  const posts = useMemo(() => {
-    return category === 'featured' ? getFeaturedPosts() : getPostsByCategory(category);
-  }, [category]);
+// Define as categorias permitidas
+type Category = "featured" | "review" | "guide" | "news" | "opinion";
 
-  if (posts.length === 0) return null;
+interface FilterButtonsProps {
+  onFilterChange: (category: Category) => void;
+}
+
+const FilterButtons = ({ onFilterChange }: FilterButtonsProps) => {
+  const categories: Category[] = ["featured", "review", "guide", "news", "opinion"];
+
+  return (
+    <div className="flex justify-center mb-6">
+      {categories.map((category) => (
+        <button
+          key={category}
+          onClick={() => onFilterChange(category)}
+          className="mx-2 px-4 py-2 bg-accent2 text-text rounded hover:bg-accent transition-all duration-300"
+        >
+          {category.charAt(0).toUpperCase() + category.slice(1)}
+        </button>
+      ))}
+    </div>
+  );
+};
+
+interface CategorySectionProps {
+  title: string;
+  selectedCategory: Category;
+}
+
+const CategorySection = ({ title, selectedCategory }: CategorySectionProps) => {
+  const posts: BlogPost[] = useMemo(() => {
+    return selectedCategory === "featured"
+      ? getFeaturedPosts()
+      : getPostsByCategory(selectedCategory);
+  }, [selectedCategory]);
+
+  if (!title || posts.length === 0)
+    return <p className="text-center">Nenhum post disponível para esta categoria.</p>;
 
   return (
     <div className="mb-12">
@@ -35,9 +68,15 @@ const CategorySection = ({ category, title }: { category: BlogPost['category'] |
               <Link
                 to={`/posts/${post.slug}`}
                 className="mt-3 inline-block px-4 py-2 bg-accent2 text-text rounded-full hover:bg-accent transition-all duration-300"
-                aria-label={`Ler ${post.category === 'review' ? 'review' : post.category === 'guide' ? 'guia' : post.category === 'news' ? 'notícia' : 'opinião'} de ${post.title}`}
               >
-                Ler {post.category === 'review' ? 'Review' : post.category === 'guide' ? 'Guia' : post.category === 'news' ? 'Notícia' : 'Opinião'}
+                Ler{" "}
+                {post.category === "review"
+                  ? "Review"
+                  : post.category === "guide"
+                  ? "Guia"
+                  : post.category === "news"
+                  ? "Notícia"
+                  : "Opinião"}
               </Link>
             </div>
           </div>
@@ -49,6 +88,7 @@ const CategorySection = ({ category, title }: { category: BlogPost['category'] |
 
 const BlogPage = () => {
   const [showScroll, setShowScroll] = useState(false);
+  const [selectedCategory, setSelectedCategory] = useState<Category>("featured");
 
   useEffect(() => {
     const handleScroll = () => setShowScroll(window.scrollY > 200);
@@ -71,16 +111,17 @@ const BlogPage = () => {
     }
   }, []);
 
+  const handleFilterChange = (category: Category) => {
+    setSelectedCategory(category);
+  };
+
   return (
     <div className="relative pt-24 bg-primary text-text">
       <section className="px-4 max-w-7xl mx-auto">
         <h1 className="text-3xl font-bold text-accent2 mb-10 text-center">Blog de Jogos</h1>
 
-        <CategorySection category="featured" title="Posts em Destaque" />
-        <CategorySection category="review" title="Reviews de Jogos" />
-        <CategorySection category="guide" title="Guias e Tutoriais" />
-        <CategorySection category="news" title="Notícias do Mundo dos Games" />
-        <CategorySection category="opinion" title="Opiniões e Análises" />
+        <FilterButtons onFilterChange={handleFilterChange} />
+        <CategorySection title="Posts" selectedCategory={selectedCategory} />
       </section>
 
       {showScroll && (

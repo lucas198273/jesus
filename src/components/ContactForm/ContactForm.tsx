@@ -6,22 +6,21 @@ export default function ContactForm() {
 
   const sendEmail = (e: React.FormEvent) => {
     e.preventDefault();
-
     if (!form.current) return;
 
     emailjs
       .sendForm(
-        "service_ikl43tq",        // ✅ seu service ID
-        "template_tspy8of",       // ✅ seu template ID
+        "service_ikl43tq",
+        "template_tspy8of",
         form.current,
-        "8hFlwFfQ1DES--w4I"        // ✅ sua Public Key
+        "8hFlwFfQ1DES--w4I"
       )
       .then(
         () => {
           alert("Mensagem enviada com sucesso!");
           form.current?.reset();
         },
-        (error) => {
+        (error: unknown) => {
           console.error(error);
           alert("Erro ao enviar a mensagem.");
         }

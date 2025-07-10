@@ -3,6 +3,7 @@ import { createContext, useContext, useState, useEffect, type ReactNode } from "
 import { useDebounce } from "use-debounce";
 import { useNavigate } from "react-router-dom";
 import { searchPosts, type BlogPost } from "../src/data/blogPosts";
+import { matchSorter } from "match-sorter";
 
 export interface SearchContextType {
   query: string;
@@ -23,26 +24,39 @@ export const SearchProvider = ({ children }: { children: ReactNode }) => {
 
   useEffect(() => {
     if (!debouncedQuery.trim()) {
-      setResults([]); setLoading(false);
+      setResults([]);
+      setLoading(false);
       return;
     }
+
     setLoading(true);
     const found = searchPosts(debouncedQuery);
-    setResults(found);
-    const exact = found.find(
-      p => p.title.toLowerCase().includes(debouncedQuery.toLowerCase()) ||
-           p.tags.some(t => t.toLowerCase() === debouncedQuery.toLowerCase())
+    const sorted = matchSorter(found, debouncedQuery, {
+      keys: ["title", "tags", "content"],
+    });
+
+    setResults(sorted);
+
+    const exactMatch = sorted.find(
+      (p) =>
+        p.title.toLowerCase() === debouncedQuery.toLowerCase() ||
+        p.tags.some((t) => t.toLowerCase() === debouncedQuery.toLowerCase())
     );
-    if (exact) navigate(`/posts/${exact.slug}`);
+
+    if (exactMatch) {
+      navigate(`/posts/${exactMatch.slug}`);
+    }
+
     setLoading(false);
   }, [debouncedQuery, navigate]);
 
   const handleSearch = (q: string) => {
     setQuery(q);
-    if (q.trim())
+    if (q.trim()) {
       navigate(`/busca?query=${encodeURIComponent(q)}`);
-    else {
-      setResults([]); setLoading(false);
+    } else {
+      setResults([]);
+      setLoading(false);
     }
   };
 

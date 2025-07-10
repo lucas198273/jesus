@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useSearch } from "../../../contexts/SearchContext";
 import type { BlogPost } from "../../data/blogPosts";
 
@@ -7,15 +7,17 @@ export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
   const { query, setQuery, results, handleSearch, loading } = useSearch();
+  const navigate = useNavigate();
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (!loading) handleSearch(query);
-    setSearchOpen(false); // Close search on submit
+    setSearchOpen(true); // Manter o campo de busca aberto após a submissão
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setQuery(e.target.value);
+    setSearchOpen(true); // Exibir sugestões enquanto digita
   };
 
   const clearSearch = () => {
@@ -24,10 +26,8 @@ export default function Header() {
   };
 
   const handleSuggestionClick = (slug: string) => {
-    clearSearch(); // Clear the search input and results
-    // Navigate to the selected post
-    // Assuming you have a function to handle navigation
-    // navigate(`/posts/${slug}`);
+    clearSearch();
+    navigate(`/posts/${slug}`);
   };
 
   return (
@@ -73,10 +73,7 @@ export default function Header() {
         </button>
 
         {/* Search form (always visible on desktop, hidden on mobile) */}
-        <form
-          onSubmit={handleSubmit}
-          className={`hidden md:flex items-center ml-4`}
-        >
+        <form onSubmit={handleSubmit} className={`hidden md:flex items-center ml-4 relative`}>
           <input
             type="text"
             placeholder="Buscar jogos..."
@@ -84,6 +81,7 @@ export default function Header() {
             onChange={handleChange}
             className="bg-[#1A1A2E] px-4 py-2 pr-10 rounded-lg border border-[#16213E] focus:ring-2 focus:ring-[#E94560] text-[#EAEAEA] w-full max-w-xs"
             aria-label="Buscar jogos"
+            autoComplete="off"
           />
           <button
             type="submit"
@@ -92,6 +90,24 @@ export default function Header() {
           >
             🔍
           </button>
+
+          {/* Sugestões */}
+          {searchOpen && results.length > 0 && (
+            <ul className="absolute top-full left-0 right-0 bg-[#1A1A2E] mt-1 rounded-lg shadow-lg max-h-64 overflow-auto z-50">
+              {results.slice(0, 5).map((post: BlogPost) => (
+                <li key={post.id}>
+                  <button
+                    type="button"
+                    onClick={() => handleSuggestionClick(post.slug)}
+                    className="w-full text-left px-4 py-2 hover:bg-[#16213E] text-[#EAEAEA] focus:outline-none"
+                  >
+                    {post.title}{" "}
+                    <span className="text-[#E94560] text-xs">({post.category})</span>
+                  </button>
+                </li>
+              ))}
+            </ul>
+          )}
         </form>
       </div>
 
@@ -108,6 +124,7 @@ export default function Header() {
             onChange={handleChange}
             className="bg-[#1A1A2E] px-4 py-2 pr-10 rounded-lg border border-[#16213E] focus:ring-2 focus:ring-[#E94560] text-[#EAEAEA] w-full"
             aria-label="Buscar jogos"
+            autoComplete="off"
           />
           <button
             type="submit"
@@ -117,19 +134,19 @@ export default function Header() {
             🔍
           </button>
 
-          {/* Resultados */}
+          {/* Sugestões */}
           {results.length > 0 && (
             <ul className="absolute w-full bg-[#1A1A2E] mt-2 rounded-lg shadow-lg max-h-64 overflow-auto z-50">
               {results.slice(0, 5).map((post: BlogPost) => (
                 <li key={post.id}>
-                  <Link
-                    to={`/posts/${post.slug}`}
-                    onClick={() => handleSuggestionClick(post.slug)} // Clear search and navigate
-                    className="block px-4 py-2 hover:bg-[#16213E] text-[#EAEAEA]"
+                  <button
+                    type="button"
+                    onClick={() => handleSuggestionClick(post.slug)}
+                    className="block w-full px-4 py-2 hover:bg-[#16213E] text-[#EAEAEA] focus:outline-none"
                   >
                     {post.title}{" "}
                     <span className="text-[#E94560] text-xs">({post.category})</span>
-                  </Link>
+                  </button>
                 </li>
               ))}
             </ul>

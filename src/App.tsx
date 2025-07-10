@@ -11,6 +11,7 @@ import Hero from "./components/Hero/Hero";
 import { PostSection } from "./components/PostSection/PostSection";
 import ScrollToTopOnRouteChange from "./components/ScrollToTopOnRouteChange/ScrollToTopOnRouteChange";
 import ContactPage from "./pages/ContactPage";
+import GiveawayList from "./components/GiveawayList/GiveawayList";
 
 function AppContent() {
   return (
@@ -23,6 +24,9 @@ function AppContent() {
 
           <main className="pt-20 min-h-screen flex flex-col">
             <Hero />
+            <div className="min-h-screen bg-gray-100">
+      <GiveawayList />
+    </div>
             <section className="py-10">
               <PostCarouselSection title="Posts em Destaque" />
             </section>
