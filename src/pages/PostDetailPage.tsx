@@ -1,8 +1,8 @@
 import { useParams, useNavigate, Link } from "react-router-dom";
 import { useState, useEffect, useMemo } from "react";
-import {  getPostBySlug, getPostsByCategory, getPostsByTag, getPostById } from "../../data/blogPosts";
+import {  getPostBySlug, getPostsByCategory, getPostsByTag, getPostById } from "../data/blogPosts";
 import { useSEO } from "../hooks/UseSEO";
-import type { BlogPost } from "../../data/blogPosts";
+import type { BlogPost } from "../data/blogPosts";
 import DOMPurify from "dompurify";
 import { ArrowLeft, Clock, Star } from "lucide-react";
 import AOS from "aos";

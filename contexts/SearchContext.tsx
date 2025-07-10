@@ -2,7 +2,7 @@
 import { createContext, useContext, useState, useEffect, type ReactNode } from "react";
 import { useDebounce } from "use-debounce";
 import { useNavigate } from "react-router-dom";
-import { searchPosts, type BlogPost } from "../data/blogPosts";
+import { searchPosts, type BlogPost } from "../src/data/blogPosts";
 
 export interface SearchContextType {
   query: string;

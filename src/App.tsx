@@ -8,6 +8,7 @@ import PostDetailPage from "./pages/PostDetailPage";
 import SearchPage from "./components/SearchPage/SearchPage";
 import { SearchProviderWrapper } from "./components/SearchProviderWrapper/SearchProviderWrapper";
 import Hero from "./components/Hero/Hero";
+import { PostSection } from "./components/PostSection/PostSection";
 
 function AppContent() {
   return (
@@ -19,9 +20,11 @@ function AppContent() {
             <section className="py-10">
               <PostCarouselSection title="Posts em Destaque" />
             </section>
+            <PostSection/>
             <section className="py-10">
               <PostCarouselSection category="review" title="Reviews Recentes" />
-            </section>
+            </section> 
+           
             <section className="py-10">
               <PostCarouselSection category="news" title="Notícias do Mundo dos Games" />
             </section>

@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { useSearch } from "../../../contexts/SearchContext";
 
-import type { BlogPost } from "../../../data/blogPosts"; // Ajuste para ../../data/blogPost se necessário
+import type { BlogPost } from "../../data/blogPosts"; // Ajuste para ../../data/blogPost se necessário
 import { useSEO } from "../../hooks/UseSEO"; // Ajuste para ../../hooks/UseSEO se necessário
 import AOS from "aos";
 import "aos/dist/aos.css";

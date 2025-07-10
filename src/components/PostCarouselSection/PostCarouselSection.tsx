@@ -4,8 +4,8 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
-import { getPostsByCategory, getFeaturedPosts } from "../../../data/blogPosts";
-import type { BlogPost } from "../../../data/blogPosts";
+import { getPostsByCategory, getFeaturedPosts } from "../../data/blogPosts";
+import type { BlogPost } from "../../data/blogPosts";
 interface PostCarouselSectionProps {
   category?: BlogPost['category'];
   title: string;

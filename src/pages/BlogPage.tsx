@@ -1,8 +1,8 @@
 import { useState, useEffect, useMemo } from "react";
 import { Link } from "react-router-dom";
 import { ArrowUp } from "lucide-react";
-import {  getPostsByCategory, getFeaturedPosts } from "../../data/blogPosts";
-import type { BlogPost } from "../../data/blogPosts";
+import {  getPostsByCategory, getFeaturedPosts } from "../data/blogPosts";
+import type { BlogPost } from "../data/blogPosts";
 const CategorySection = ({ category, title }: { category: BlogPost['category'] | 'featured'; title: string }) => {
   const posts = useMemo(() => {
     return category === 'featured' ? getFeaturedPosts() : getPostsByCategory(category);

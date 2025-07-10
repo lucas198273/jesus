@@ -1,7 +1,7 @@
 // src/hooks/useRecipeData.ts
 import { useState, useEffect } from "react";
-import type{ Recipe } from "../../data/recipes";
-import { recipes } from "../../data/recipes";
+import type{ Recipe } from "../data/recipes";
+import { recipes } from "../data/recipes";
 
 export const useRecipeData = (slug?: string) => {
   const [recipe, setRecipe] = useState<Recipe | null>(null);

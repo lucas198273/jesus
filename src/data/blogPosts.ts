@@ -41,35 +41,34 @@ export interface BlogPost {
   views: number;
   likes: number;
 }
+
 export const blogPosts: BlogPost[] = [
   {
     id: "1",
     title: "Cyberpunk 2077: Phantom Liberty - A Redenção Esperada",
     slug: "cyberpunk-2077-phantom-liberty-review",
-    excerpt: "Depois de anos de polêmicas, Cyberpunk 2077 finalmente entrega o prometido com a expansão Phantom Liberty. Saiba se vale a pena revisitar Night City.",
+    excerpt: "Depois de anos de polêmica, Cyberpunk 2077 finalmente entrega o que prometeu com a expansão Phantom Liberty. Descubra se vale a pena voltar para Night City.",
     content: `
-      <h2>Uma Nova Oportunidade para Night City</h2>
-      <p>Cyberpunk 2077: Phantom Liberty vai além de uma simples expansão — representa a resposta da CD Projekt RED aos erros do lançamento inicial, consolidando a evolução do RPG futurista.</p>
-
-      <h3>História e Narrativa Imersivas</h3>
-      <p>A trama de Phantom Liberty é uma das mais envolventes já desenvolvidas pela CD Projekt RED. Com o retorno de Keanu Reeves como Johnny Silverhand e Idris Elba interpretando Solomon Reed, a dinâmica entre personagens traz profundidade e autenticidade.</p>
-
-      <h3>Jogabilidade Renovada</h3>
-      <p>O combate foi revisado completamente, com sistema de hacking mais fluido, armas que apresentam peso real e uma inteligência artificial adversária aprimorada, elevando o desafio e a imersão.</p>
-
-      <h3>Qualidade Técnica e Visual</h3>
-      <p>Visualmente, Phantom Liberty impressiona. Os efeitos avançados de ray tracing, especialmente à noite em Night City, criam uma atmosfera cyberpunk detalhada e envolvente, superando o desempenho inicial do jogo base.</p>
-
-      <h3>Conclusão: A Versão Definitiva de Cyberpunk 2077</h3>
-      <p>Phantom Liberty consolida Cyberpunk 2077 como um dos RPGs mais impactantes da geração. Se você esperava o momento ideal para voltar a Night City, ele chegou.</p>
-
-      <p><small>Fonte: <a href="https://www.metacritic.com/game/pc/cyberpunk-2077-phantom-liberty" target="_blank" rel="noopener noreferrer">Metacritic (2024)</a></small></p>
+      <h2>Uma Nova Chance para Night City</h2>
+      <p>Cyberpunk 2077: Phantom Liberty representa muito mais que uma simples expansão - é uma declaração de intenções da CD Projekt RED, mostrando que aprenderam com os erros do lançamento contconturbado do jogo base.</p>
+      
+      <h3>História e Narrativa</h3>
+      <p>A narrativa de Phantom Liberty é facilmente uma das melhores já criadas pela CD Projekt RED. Com Keanu Reeves retornando como Johnny Silverhand e a adição de Idris Elba como Solomon Reed, a química entre os personagens é palpável.</p>
+      
+      <h3>Jogabilidade</h3>
+      <p>As mecânicas de combate foram completamente reformuladas. O sistema de hacking agora é mais intuitivo, as armas têm peso e impacto reais, e a inteligência artificial dos inimigos foi significativamente melhorada.</p>
+      
+      <h3>Aspectos Técnicos</h3>
+      <p>Visualmente, Phantom Liberty é deslumbrante. Os efeitos de ray tracing, especialmente em Night City durante a noite, criam uma atmosfera cyberpunk autêntica que faltava no lançamento original.</p>
+      
+      <h3>Conclusão</h3>
+      <p>Phantom Liberty não é apenas uma expansão - é a versão definitiva de Cyberpunk 2077. Se você estava esperando o momento certo para mergulhar em Night City, esse momento chegou.</p>
     `,
-    featuredImage: "/assets/cyber/cyber.webp",
+    featuredImage: "/assets/blog/cyberpunk-phantom-liberty.webp",
     gallery: [
-      "/assets/cyber/cyber.webp",
-      "/assets/cyber/cyber2.webp",
-      "/assets/cyber/cyber3.webp"
+      "/assets/blog/cyberpunk-1.webp",
+      "/assets/blog/cyberpunk-2.webp",
+      "/assets/blog/cyberpunk-3.webp"
     ],
     category: "review",
     tags: ["cyberpunk", "cd projekt red", "rpg", "expansão", "review"],
@@ -95,7 +94,7 @@ export const blogPosts: BlogPost[] = [
     },
     seoMeta: {
       metaTitle: "Cyberpunk 2077: Phantom Liberty Review - A Redenção Esperada | GameHub",
-      metaDescription: "Review completa de Cyberpunk 2077: Phantom Liberty. Descubra se a expansão redime o jogo base e vale a pena revisitar Night City.",
+      metaDescription: "Review completa de Cyberpunk 2077: Phantom Liberty. Descubra se a expansão conseguiu redimir o jogo base e se vale a pena voltar para Night City.",
       keywords: ["cyberpunk 2077", "phantom liberty", "review", "cd projekt red", "expansão"],
       ogImage: "/assets/blog/cyberpunk-phantom-liberty-og.webp"
     },
@@ -106,30 +105,28 @@ export const blogPosts: BlogPost[] = [
   },
   {
     id: "2",
-    title: "The Legend of Zelda: Tears of the Kingdom - Guia Completo para Iniciantes",
+    title: "The Legend of Zelda: Tears of the Kingdom - Guia Completo de Início",
     slug: "zelda-tears-kingdom-guia-inicio",
-    excerpt: "Comece sua jornada em Tears of the Kingdom com este guia completo. Domine os primeiros passos e explore o novo mundo de Hyrule ao máximo.",
+    excerpt: "Começando em Tears of the Kingdom? Este guia completo te ajudará a dominar os primeiros passos no novo Hyrule e aproveitar ao máximo a aventura.",
     content: `
-      <h2>Primeiros Passos em um Novo Hyrule</h2>
-      <p>Tears of the Kingdom oferece uma experiência expandida e mais profunda que seu predecessor. Este guia essencial ajudará você a começar sua aventura com confiança.</p>
-
-      <h3>Habilidades Fundamentais de Link</h3>
-      <p>As novas habilidades revolucionam a jogabilidade. Com Fuse, combine objetos para criar armas e ferramentas inéditas; Ultrahand permite construções inovadoras, fundamentais para resolver puzzles complexos.</p>
-
-      <h3>Sistema de Construção Inovador</h3>
-      <p>O sistema de construção é o coração do gameplay, estimulando criatividade e estratégia para enfrentar desafios variados. Explore diferentes combinações para avançar em sua jornada.</p>
-
-      <h3>Dicas Essenciais para Exploração</h3>
-      <p>Hyrule agora é dividido em três camadas: subsolo, superfície e céu. Cada nível oferece recursos exclusivos e desafios únicos, exigindo planejamento cuidadoso para maximizar sua exploração.</p>
-
-      <p><small>Fonte: <a href="https://www.nintendo.com/games/detail/the-legend-of-zelda-tears-of-the-kingdom-switch/" target="_blank" rel="noopener noreferrer">Nintendo Oficial (2023)</a></small></p>
+      <h2>Primeiros Passos no Novo Hyrule</h2>
+      <p>Tears of the Kingdom oferece uma experiência ainda mais rica que seu predecessor. Este guia te ajudará a começar com o pé direito.</p>
+      
+      <h3>Habilidades Fundamentais</h3>
+      <p>As novas habilidades de Link revolucionam a jogabilidade. Fuse permite combinar objetos para criar armas únicas, enquanto Ultrahand possibilita construções complexas.</p>
+      
+      <h3>Sistema de Construção</h3>
+      <p>O sistema de construção é o coração de Tears of the Kingdom. Aprenda a pensar fora da caixa e experimentar diferentes combinações para resolver puzzles creativamente.</p>
+      
+      <h3>Dicas de Exploração</h3>
+      <p>Hyrule agora tem três camadas: subsolo, superfície e céu. Cada região oferece recursos únicos e desafios específicos. Planeje sua exploração considerando todos os níveis.</p>
     `,
-    featuredImage: "/assets/zelda.jpg",
+    featuredImage: "/assets/blog/zelda-tears-kingdom.webp",
     category: "guide",
     tags: ["zelda", "tears of the kingdom", "nintendo", "guia", "tutorial"],
     author: {
       name: "Maria Santos",
-      avatar: "/assets/zelda.jpg",
+      avatar: "/assets/authors/maria-santos.webp",
       bio: "Especialista em jogos Nintendo e criadora de conteúdo focada em guias e tutoriais."
     },
     publishedAt: "2024-01-20T15:00:00Z",
@@ -146,7 +143,7 @@ export const blogPosts: BlogPost[] = [
     },
     seoMeta: {
       metaTitle: "Zelda: Tears of the Kingdom - Guia Completo para Iniciantes | GameHub",
-      metaDescription: "Guia completo para iniciar em The Legend of Zelda: Tears of the Kingdom. Dicas e estratégias para dominar Hyrule.",
+      metaDescription: "Guia completo para começar em The Legend of Zelda: Tears of the Kingdom. Dicas, estratégias e tudo que você precisa saber para dominar Hyrule.",
       keywords: ["zelda", "tears of the kingdom", "guia", "tutorial", "nintendo", "hyrule"],
       ogImage: "/assets/blog/zelda-tears-kingdom-og.webp"
     },
@@ -159,20 +156,18 @@ export const blogPosts: BlogPost[] = [
     id: "3",
     title: "PlayStation 5 Pro: Vazamentos Revelam Especificações Impressionantes",
     slug: "playstation-5-pro-vazamentos-especificacoes",
-    excerpt: "Novos vazamentos indicam que o PlayStation 5 Pro pode ser lançado ainda em 2024, com melhorias significativas em performance e ray tracing.",
+    excerpt: "Novos vazamentos sugerem que o PlayStation 5 Pro pode chegar ainda este ano com melhorias significativas em performance e ray tracing.",
     content: `
       <h2>O Que Sabemos Sobre o PS5 Pro</h2>
-      <p>De acordo com vazamentos recentes, a Sony está desenvolvendo o PlayStation 5 Pro, focado em aprimorar a performance para jogos em 4K e oferecer ray tracing mais estável.</p>
-
+      <p>Vazamentos recentes de desenvolvedores indicam que a Sony está trabalhando em uma versão Pro do PlayStation 5, com foco em melhorar a performance em jogos 4K e ray tracing.</p>
+      
       <h3>Especificações Rumoreadas</h3>
-      <p>Fontes apontam para uma GPU mais potente, capaz de rodar títulos em 4K nativo com maior fluidez, além de melhorias no suporte a ray tracing para gráficos mais realistas.</p>
-
-      <h3>Data Prevista de Lançamento</h3>
-      <p>As especulações indicam lançamento para o final de 2024, possivelmente alinhado com lançamentos exclusivos da Sony, aumentando a competitividade no mercado de consoles.</p>
-
-      <p><small>Fonte: <a href="https://www.techradar.com/news/ps5-pro" target="_blank" rel="noopener noreferrer">TechRadar (2024)</a></small></p>
+      <p>Segundo as fontes, o PS5 Pro contará com uma GPU significativamente mais poderosa, capaz de entregar 4K nativo em mais jogos e ray tracing mais estável.</p>
+      
+      <h3>Data de Lançamento</h3>
+      <p>As especulações apontam para um lançamento no final de 2024, coincidindo com grandes lançamentos exclusivos da Sony.</p>
     `,
-    featuredImage: "/assets/ps4.webp",
+    featuredImage: "/assets/blog/ps5-pro-rumors.webp",
     category: "news",
     tags: ["playstation", "ps5 pro", "sony", "console", "hardware"],
     author: {
@@ -184,7 +179,7 @@ export const blogPosts: BlogPost[] = [
     readTime: 5,
     seoMeta: {
       metaTitle: "PlayStation 5 Pro: Vazamentos Revelam Especificações | GameHub",
-      metaDescription: "Confira os vazamentos mais recentes sobre o PlayStation 5 Pro e suas especificações técnicas impressionantes.",
+      metaDescription: "Novos vazamentos do PS5 Pro revelam especificações impressionantes. Confira tudo sobre a nova versão do console da Sony.",
       keywords: ["ps5 pro", "playstation 5 pro", "sony", "console", "hardware", "vazamentos"],
       ogImage: "/assets/blog/ps5-pro-rumors-og.webp"
     },

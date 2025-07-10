@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useSearch } from "../../../contexts/SearchContext";
-import type { BlogPost } from "../../../data/blogPosts";
+import type { BlogPost } from "../../data/blogPosts";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
