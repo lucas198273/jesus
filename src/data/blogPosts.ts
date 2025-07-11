@@ -650,7 +650,43 @@ export const blogPosts: BlogPost[] = [
   status: "published",
   views: 0,
   likes: 0
+},{
+  id: "13",
+  title: "Por que os Jogos AA estão Dominando em 2025",
+  slug: "reflexao-jogos-aa-2025",
+  excerpt: "Os jogos AA, de orçamento médio, estão ganhando destaque e entregando experiências inovadoras e de alta qualidade em 2025.",
+  content: `
+    <h2>O renascimento dos jogos AA</h2>
+    <p>Em 2025, vimos títulos como <strong>Clair Obscur: Expedition 33</strong> e <strong>Split Fiction</strong> liderarem indicações ao Game of the Year, mostrando que jogos desenvolvidos por equipes menores podem oferecer qualidade de AAA sem os riscos exorbitantes — aclamados com notas acima de 90 no Metacritic e OpenCritic :contentReference[oaicite:1]{index=1}.</p>
+
+    <h3>Produção sustentável e criativa</h3>
+    <p>Esses projetos custam menos e trazem equipes enxutas, focando na inovação, narrativa e arte, sem a burocracia dos estúdios gigantescos. É um modelo mais sustentável que agrada tanto desenvolvedores quanto jogadores.</p>
+
+    <h3>O impacto no futuro do setor</h3>
+    <p>Se Clair Obscur ganhar um grande prêmio, pode marcar uma mudança definitiva na percepção entre indie e AAA. Isso incentiva studios menores a investirem em suas visões criativas, sem a pressão de atingir metas astronômicas de vendas :contentReference[oaicite:2]{index=2}.</p>
+  `,
+  featuredImage: "/assets/aa/aa.jpg",
+  category: "opinion",
+  tags: ["AA games", "indie", "gaming trends", "2025"],
+  author: {
+    name: "Rafael Lima",
+    avatar: "/assets/authors/rafael-lima.jpg",
+    bio: "Analista de mercado gamer e entusiasta de narrativas interativas.",
+  },
+  publishedAt: "2025-07-11T12:00:00Z",
+  readTime: 6,
+  seoMeta: {
+    metaTitle: "O Renascimento dos Jogos AA em 2025 | Universo Pixels",
+    metaDescription: "Entenda por que jogos AA estão dominando 2025 e o que isso significa para a indústria.",
+    keywords: ["AA games", "indústria gamer 2025", "Clair Obscur", "Split Fiction"],
+    ogImage: "/assets/blog/aa-trend-og.webp"
+  },
+  featured: false,
+  status: "published",
+  views: 0,
+  likes: 0
 }
+
 
 
 
