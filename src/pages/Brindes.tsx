@@ -21,7 +21,7 @@ export default function Brindes() {
           </p>
         </div>
 
-        <div className="max-w-3xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           <GiveawayList />
         </div>
       </div>
