@@ -40,9 +40,9 @@ const PostDetailPage: React.FC = () => {
     return uniquePosts.slice(0, 3);
   }, [post, slug]);
 
-  const handleTagClick = (tag: string) => {
-    navigate(`/busca?tag=${encodeURIComponent(tag)}`);
-  };
+  // const handleTagClick = (tag: string) => {
+  //   navigate(`/busca?tag=${encodeURIComponent(tag)}`);
+  // };
 
   if (!post) {
     return (
@@ -122,7 +122,7 @@ const PostDetailPage: React.FC = () => {
           </div>
         </header>
 
-        {post.tags.length > 0 && (
+        {/* {post.tags.length > 0 && (
           <section className="flex flex-wrap gap-2 justify-center mt-4" aria-label="Tags do post" data-aos="fade-up" data-aos-delay="100">
             {post.tags.map((tag) => (
               <span
@@ -135,7 +135,7 @@ const PostDetailPage: React.FC = () => {
               </span>
             ))}
           </section>
-        )}
+        )} */}
 
         {post.gameInfo && (
           <section className="bg-secondary p-6 rounded-lg shadow-lg" data-aos="fade-up" data-aos-delay="200">

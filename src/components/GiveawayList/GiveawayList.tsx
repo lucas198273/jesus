@@ -1,4 +1,3 @@
-// src/components/GiveawayList.tsx
 import React, { useState, useEffect, useMemo } from "react";
 import axios, { AxiosError } from "axios";
 
@@ -18,25 +17,6 @@ interface Giveaway {
   end_date: string;
 }
 
-const ErrorBoundary: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const [hasError, setHasError] = useState(false);
-
-  useEffect(() => {
-    const handleError = () => setHasError(true);
-    window.addEventListener("error", handleError);
-    return () => window.removeEventListener("error", handleError);
-  }, []);
-
-  if (hasError) {
-    return (
-      <div className="text-center text-red-600 p-4">
-        Ocorreu um erro. Recarregue a página.
-      </div>
-    );
-  }
-
-  return <>{children}</>;
-};
 
 const GiveawayList: React.FC = () => {
   const [giveaways, setGiveaways] = useState<Giveaway[]>([]);

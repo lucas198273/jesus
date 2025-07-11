@@ -98,7 +98,7 @@ export const blogPosts: BlogPost[] = [
     metacriticScore: 87
   },
   seoMeta: {
-    metaTitle: "Lost in Random: The Eternal Die Review – Roguelike Estiloso 2025 | GameHub",
+    metaTitle: "Lost in Random: The Eternal Die Review – Roguelike Estiloso 2025 | Universo Pixels",
     metaDescription: "Review de Lost in Random: The Eternal Die, um roguelike inspirado em Hades com combate ágil, estética Burtonesca e mecânicas únicas.",
     keywords: ["lost in random review", "eternal die", "roguelike 2025", "hades-like", "review jogos"],
     ogImage: "/assets/blog/lost-in-random-eternal-die-og.webp"
@@ -110,68 +110,7 @@ export const blogPosts: BlogPost[] = [
 }
 ,
 
-  {
-    id: "10",
-    title: "Cyberpunk 2077: Phantom Liberty - A Redenção Esperada",
-    slug: "cyberpunk-2077-phantom-liberty-review",
-    excerpt: "Depois de anos de polêmicas, Cyberpunk 2077 finalmente entrega o prometido com a expansão Phantom Liberty. Saiba se vale a pena revisitar Night City.",
-    content: `
-      <h2>Uma Nova Oportunidade para Night City</h2>
-      <p>Cyberpunk 2077: Phantom Liberty vai além de uma simples expansão — representa a resposta da CD Projekt RED aos erros do lançamento inicial, consolidando a evolução do RPG futurista.</p>
 
-      <h3>História e Narrativa Imersivas</h3>
-      <p>A trama de Phantom Liberty é uma das mais envolventes já desenvolvidas pela CD Projekt RED. Com o retorno de Keanu Reeves como Johnny Silverhand e Idris Elba interpretando Solomon Reed, a dinâmica entre personagens traz profundidade e autenticidade.</p>
-
-      <h3>Jogabilidade Renovada</h3>
-      <p>O combate foi revisado completamente, com sistema de hacking mais fluido, armas que apresentam peso real e uma inteligência artificial adversária aprimorada, elevando o desafio e a imersão.</p>
-
-      <h3>Qualidade Técnica e Visual</h3>
-      <p>Visualmente, Phantom Liberty impressiona. Os efeitos avançados de ray tracing, especialmente à noite em Night City, criam uma atmosfera cyberpunk detalhada e envolvente, superando o desempenho inicial do jogo base.</p>
-
-      <h3>Conclusão: A Versão Definitiva de Cyberpunk 2077</h3>
-      <p>Phantom Liberty consolida Cyberpunk 2077 como um dos RPGs mais impactantes da geração. Se você esperava o momento ideal para voltar a Night City, ele chegou.</p>
-
-      <p><small>Fonte: <a href="https://www.metacritic.com/game/pc/cyberpunk-2077-phantom-liberty" target="_blank" rel="noopener noreferrer">Metacritic (2024)</a></small></p>
-    `,
-    featuredImage: "/assets/cyber/cyber.webp",
-    gallery: [
-      "/assets/cyber/cyber.webp",
-      "/assets/cyber/cyber2.webp",
-      "/assets/cyber/cyber3.webp"
-    ],
-    category: "review",
-    tags: ["cyberpunk", "cd projekt red", "rpg", "expansão", "review"],
-    author: {
-      name: "João Silva",
-      avatar: "/assets/authors/joao-silva.webp",
-      bio: "Especialista em RPGs e jogos narrativos com mais de 10 anos de experiência no jornalismo de games."
-    },
-    publishedAt: "2024-01-15T10:00:00Z",
-    updatedAt: "2024-01-16T14:30:00Z",
-    readTime: 8,
-    rating: 9.2,
-    gameInfo: {
-      title: "Cyberpunk 2077: Phantom Liberty",
-      developer: "CD Projekt RED",
-      publisher: "CD Projekt",
-      releaseDate: "2023-09-26",
-      platforms: ["PC", "PlayStation 5", "Xbox Series X/S"],
-      genre: ["RPG", "Ação", "Aventura"],
-      price: 29.99,
-      steamId: "1091500",
-      metacriticScore: 89
-    },
-    seoMeta: {
-      metaTitle: "Cyberpunk 2077: Phantom Liberty Review - A Redenção Esperada | GameHub",
-      metaDescription: "Review completa de Cyberpunk 2077: Phantom Liberty. Descubra se a expansão redime o jogo base e vale a pena revisitar Night City.",
-      keywords: ["cyberpunk 2077", "phantom liberty", "review", "cd projekt red", "expansão"],
-      ogImage: "/assets/blog/cyberpunk-phantom-liberty-og.webp"
-    },
-    featured: true,
-    status: "published",
-    views: 15420,
-    likes: 892
-  },
   {
     id: "2",
     title: "The Legend of Zelda: Tears of the Kingdom - Guia Completo para Iniciantes",
@@ -213,7 +152,7 @@ export const blogPosts: BlogPost[] = [
       metacriticScore: 96
     },
     seoMeta: {
-      metaTitle: "Zelda: Tears of the Kingdom - Guia Completo para Iniciantes | GameHub",
+      metaTitle: "Zelda: Tears of the Kingdom - Guia Completo para Iniciantes | Universo Pixels",
       metaDescription: "Guia completo para iniciar em The Legend of Zelda: Tears of the Kingdom. Dicas e estratégias para dominar Hyrule.",
       keywords: ["zelda", "tears of the kingdom", "guia", "tutorial", "nintendo", "hyrule"],
       ogImage: "/assets/blog/zelda-tears-kingdom-og.webp"
@@ -251,7 +190,7 @@ export const blogPosts: BlogPost[] = [
     publishedAt: "2024-01-25T09:00:00Z",
     readTime: 5,
     seoMeta: {
-      metaTitle: "PlayStation 5 Pro: Vazamentos Revelam Especificações | GameHub",
+      metaTitle: "PlayStation 5 Pro: Vazamentos Revelam Especificações | Universo Pixels",
       metaDescription: "Confira os vazamentos mais recentes sobre o PlayStation 5 Pro e suas especificações técnicas impressionantes.",
       keywords: ["ps5 pro", "playstation 5 pro", "sony", "console", "hardware", "vazamentos"],
       ogImage: "/assets/blog/ps5-pro-rumors-og.webp"
@@ -295,7 +234,7 @@ export const blogPosts: BlogPost[] = [
   publishedAt: "2025-07-09T11:00:00Z",
   readTime: 6,
   seoMeta: {
-    metaTitle: "PS Plus Julho 2025: Cyberpunk 2077 Grátis e Novos Jogos | GameHub",
+    metaTitle: "PS Plus Julho 2025: Cyberpunk 2077 Grátis e Novos Jogos | Universo Pixels",
     metaDescription: "Confira os jogos do PS Plus de julho de 2025, incluindo Cyberpunk 2077 gratuito, descontos em DLCs e mais lançamentos.",
     keywords: ["ps plus julho 2025", "cyberpunk 2077 ps plus", "phantom liberty", "playstation plus", "jogos grátis julho"],
     ogImage: "/assets/psplus/psplus.webp"
@@ -334,7 +273,7 @@ export const blogPosts: BlogPost[] = [
   publishedAt: "2025-07-08T10:00:00Z",
   readTime: 5,
   seoMeta: {
-    metaTitle: "Grow a Garden: Roblox quebra recorde histórico em 2025 | GameHub",
+    metaTitle: "Grow a Garden: Roblox quebra recorde histórico em 2025 | Universo Pixels",
     metaDescription: "Roblox atinge novo marco com Grow a Garden, ultrapassando 21 milhões de jogadores simultâneos em junho de 2025.",
     keywords: ["roblox recorde", "grow a garden", "roblox 2025", "jogo mais jogado", "multiplayer", "simulador social"],
     ogImage: "/assets/blog/roblox-grow-garden-og.webp"
@@ -373,7 +312,7 @@ export const blogPosts: BlogPost[] = [
   publishedAt: "2025-07-07T13:00:00Z",
   readTime: 5,
   seoMeta: {
-    metaTitle: "Tony Hawk’s Pro Skater 3+4 Remake chega em julho | GameHub",
+    metaTitle: "Tony Hawk’s Pro Skater 3+4 Remake chega em julho | Universo Pixels",
     metaDescription: "Remake de Tony Hawk’s Pro Skater 3 e 4 será lançado em 11 de julho de 2025 com gráficos 4K e multiplayer online.",
     keywords: ["tony hawk 2025", "remake thps 3", "remake thps 4", "jogos de skate", "lançamento julho", "skate"],
     ogImage: "/assets/blog/tony-hawk-remake-2025-og.webp"
@@ -424,7 +363,7 @@ export const blogPosts: BlogPost[] = [
     
   },
   seoMeta: {
-    metaTitle: "Kingdom Come: Deliverance 2 Review – RPG Medieval Imersivo | GameHub",
+    metaTitle: "Kingdom Come: Deliverance 2 Review – RPG Medieval Imersivo | Universo Pixels",
     metaDescription: "Confira nosso review de Kingdom Come: Deliverance 2, um RPG medieval complexo, imersivo e considerado um dos melhores jogos de 2025.",
     keywords: ["kingdom come deliverance 2", "review rpg medieval", "jogos 2025"],
     ogImage: "/assets/blog/kcd2-review-og.webp"
@@ -474,7 +413,7 @@ export const blogPosts: BlogPost[] = [
   
   },
   seoMeta: {
-    metaTitle: "FBC: Firebreak Review – Remedy entra no mundo multiplayer | GameHub",
+    metaTitle: "FBC: Firebreak Review – Remedy entra no mundo multiplayer | Universo Pixels",
     metaDescription: "Leia nossa análise de FBC: Firebreak, a estreia da Remedy no multiplayer que mistura ação e progressão inspirada em Control.",
     keywords: ["fbc firebreak", "remedy multiplayer", "review 2025", "control spin-off"],
     ogImage: "/assets/blog/fbc-firebreak-og.webp"
@@ -531,7 +470,7 @@ export const blogPosts: BlogPost[] = [
     genre: ["FPS", "Ação"],
   },
   seoMeta: {
-    metaTitle: "Doom: The Dark Ages Review – FPS medieval brutal | GameHub",
+    metaTitle: "Doom: The Dark Ages Review – FPS medieval brutal | Universo Pixels",
     metaDescription: "Confira nosso review de Doom: The Dark Ages, que traz o Slayer para a era medieval com armas, veículos e estratégia.",
     keywords: ["doom the dark ages", "review fps 2025", "doom medieval", "id software"],
     ogImage: "/assets/blog/doom-dark-ages-og.webp"
@@ -541,6 +480,178 @@ export const blogPosts: BlogPost[] = [
   views: 0,
   likes: 0
 }
+,  {
+    id: "10",
+    title: "Cyberpunk 2077: Phantom Liberty - A Redenção Esperada",
+    slug: "cyberpunk-2077-phantom-liberty-review",
+    excerpt: "Depois de anos de polêmicas, Cyberpunk 2077 finalmente entrega o prometido com a expansão Phantom Liberty. Saiba se vale a pena revisitar Night City.",
+    content: `
+      <h2>Uma Nova Oportunidade para Night City</h2>
+      <p>Cyberpunk 2077: Phantom Liberty vai além de uma simples expansão — representa a resposta da CD Projekt RED aos erros do lançamento inicial, consolidando a evolução do RPG futurista.</p>
+
+      <h3>História e Narrativa Imersivas</h3>
+      <p>A trama de Phantom Liberty é uma das mais envolventes já desenvolvidas pela CD Projekt RED. Com o retorno de Keanu Reeves como Johnny Silverhand e Idris Elba interpretando Solomon Reed, a dinâmica entre personagens traz profundidade e autenticidade.</p>
+
+      <h3>Jogabilidade Renovada</h3>
+      <p>O combate foi revisado completamente, com sistema de hacking mais fluido, armas que apresentam peso real e uma inteligência artificial adversária aprimorada, elevando o desafio e a imersão.</p>
+
+      <h3>Qualidade Técnica e Visual</h3>
+      <p>Visualmente, Phantom Liberty impressiona. Os efeitos avançados de ray tracing, especialmente à noite em Night City, criam uma atmosfera cyberpunk detalhada e envolvente, superando o desempenho inicial do jogo base.</p>
+
+      <h3>Conclusão: A Versão Definitiva de Cyberpunk 2077</h3>
+      <p>Phantom Liberty consolida Cyberpunk 2077 como um dos RPGs mais impactantes da geração. Se você esperava o momento ideal para voltar a Night City, ele chegou.</p>
+
+      <p><small>Fonte: <a href="https://www.metacritic.com/game/pc/cyberpunk-2077-phantom-liberty" target="_blank" rel="noopener noreferrer">Metacritic (2024)</a></small></p>
+    `,
+    featuredImage: "/assets/cyber/cyber.webp",
+    gallery: [
+      "/assets/cyber/cyber.webp",
+      "/assets/cyber/cyber2.webp",
+      "/assets/cyber/cyber3.webp"
+    ],
+    category: "review",
+    tags: ["cyberpunk", "cd projekt red", "rpg", "expansão", "review"],
+    author: {
+      name: "João Silva",
+      avatar: "/assets/authors/joao-silva.webp",
+      bio: "Especialista em RPGs e jogos narrativos com mais de 10 anos de experiência no jornalismo de games."
+    },
+    publishedAt: "2024-01-15T10:00:00Z",
+    updatedAt: "2024-01-16T14:30:00Z",
+    readTime: 8,
+    rating: 9.2,
+    gameInfo: {
+      title: "Cyberpunk 2077: Phantom Liberty",
+      developer: "CD Projekt RED",
+      publisher: "CD Projekt",
+      releaseDate: "2023-09-26",
+      platforms: ["PC", "PlayStation 5", "Xbox Series X/S"],
+      genre: ["RPG", "Ação", "Aventura"],
+      price: 29.99,
+      steamId: "1091500",
+      metacriticScore: 89
+    },
+    seoMeta: {
+      metaTitle: "Cyberpunk 2077: Phantom Liberty Review - A Redenção Esperada | Universo Pixels",
+      metaDescription: "Review completa de Cyberpunk 2077: Phantom Liberty. Descubra se a expansão redime o jogo base e vale a pena revisitar Night City.",
+      keywords: ["cyberpunk 2077", "phantom liberty", "review", "cd projekt red", "expansão"],
+      ogImage: "/assets/blog/cyberpunk-phantom-liberty-og.webp"
+    },
+    featured: true,
+    status: "published",
+    views: 15420,
+    likes: 892
+  },
+{
+  id: "11",
+  title: "Assassin’s Creed Shadows – Guia Definitivo para Iniciantes",
+  slug: "assassins-creed-shadows-guia-iniciante",
+  excerpt: "Descubra os segredos de Assassin’s Creed Shadows com este guia completo: desde combate a exploração, ideal para novos jogadores.",
+  content: `
+    <h2>Entrando na Era de Naoe e Yasuke</h2>
+    <p>Com lançamento em 14 de fevereiro de 2025, Assassin’s Creed Shadows traz um mundo aberto ambientado no Japão Feudal. Este guia vai ajudá-lo a entender as mecânicas iniciais e se adaptar ao estilo único do jogo :contentReference[oaicite:1]{index=1}.</p>
+
+    <h3>Combate e Arquitetura Stealth</h3>
+    <p>Explore o sistema de combate refinado, que mistura furtividade e combate direto. Dicas sobre armas recomendadas e upgrades para Yasuke e Naoe.</p>
+
+    <h3>Exploração e Missões Secundárias</h3>
+    <p>O game oferece muitas atividades paralelas. Aprenda a balancear missões principais e secundárias para evoluir rápido e explorar o mapeamento do jogo.</p>
+
+    <h3>Recompensas e Itens Essenciais</h3>
+    <p>Encontre recursos valiosos e artefatos que aumentam seu desempenho no combate. Saiba onde buscar e como usá-los a seu favor.</p>
+
+    <p><small>Fonte: <a href="https://www.gamesradar.com/assassins-creed-shadows-guide/" target="_blank" rel="noopener noreferrer">GamesRadar (2025)</a></small></p>
+  `,
+  featuredImage: "/assets/ass/ass-1.webp",
+  videos:[
+    "u6nnRfKrZy8"
+  ],
+  category: "guide",
+  tags: ["assassins creed", "shadows", "ac shadows", "guia", "stealth"],
+  author: {
+    name: "Lucas Pereira",
+    avatar: "/assets/ass/ass-1.webp",
+    bio: "Gamer e criador de conteúdo especializado em jogos de ação e furtividade."
+  },
+  publishedAt: "2025-05-10T10:00:00Z",
+  readTime: 10,
+  gameInfo: {
+    title: "Assassin’s Creed Shadows",
+    developer: "Ubisoft",
+    publisher: "Ubisoft",
+    releaseDate: "2025-02-14",
+    platforms: ["PC", "PS5", "Xbox Series X/S"],
+    genre: ["Ação", "Stealth", "Aventura"],
+    price: 69.99,
+    metacriticScore: 92
+  },
+  seoMeta: {
+    metaTitle: "Assassin’s Creed Shadows – Guia Completo para Iniciantes | Universo Pixels",
+    metaDescription: "Aprenda o básico de Assassin’s Creed Shadows: dicas de combate, exploração e progressão para começar sua aventura no Japão Feudal.",
+    keywords: ["assassins creed", "shadows", "guia", "stealth", "iniciante"],
+    ogImage: "/assets/ass/ass-1.webp"
+  },
+  featured: true,
+  status: "published",
+  views: 15800,
+  likes: 890
+},{
+  id: "12",
+  title: "Monster Hunter Wilds – Guia de Caça Estratégica",
+  slug: "monster-hunter-wilds-guia-estrategico",
+  excerpt: "Domine as terras selvagens de Wilds com este guia estratégico: caças, equipamentos e dicas para sobreviver aos monstros mais imponentes.",
+  content: `
+    <h2>Bem-vindo ao Desafio das Terras Proibidas</h2>
+    <p>Lançado em 28 de fevereiro de 2025, Monster Hunter Wilds expande a fórmula da série com um mundo mais interativo e profundo :contentReference[oaicite:1]{index=1}.</p>
+
+    <h3>Troca de Armas Estratégica</h3>
+    <p>A novidade é a possibilidade de carregar duas armas e trocá-las usando seu Seikrets, criando combos adaptáveis conforme o monstro enfrentado :contentReference[oaicite:2]{index=2}.</p>
+
+    <h3>Acampamentos Pop-Up & Dinâmica de Ambiente</h3>
+    <p>Monte acampamentos em áreas-chave para restabelecer recursos no campo, sem precisar retornar à base :contentReference[oaicite:3]{index=3}.</p>
+
+    <h3>Sistema de Feridas e Pontos Fracos</h3>
+    <p>O novo sistema de feridas permite atacar pontos vulneráveis específicos dos monstros para causar dano extra :contentReference[oaicite:4]{index=4}.</p>
+
+    <p><small>Fonte: <a href="https://en.wikipedia.org/wiki/Monster_Hunter_Wilds" target="_blank" rel="noopener noreferrer">Wikipedia (2025)</a></small></p>
+  `,
+  featuredImage: "/assets/monster/monster-1.webp",
+  gallery: [
+     "/assets/monster/monster-2.webp",
+     "/assets/monster/monster-3.webp",
+     "/assets/monster/monster-4.webp",
+  ],
+  category: "guide",
+  tags: ["monster hunter", "wilds", "caça", "jogos", "capcom"],
+  author: {
+    name: "Ana Costa",
+    avatar: "/assets/authors/ana-costa.jpg",
+    bio: "Entusiasta de jogos action-RPG e guia de mecânicas complexas."
+  },
+  publishedAt: "2025-04-20T09:00:00Z",
+  readTime: 11,
+  gameInfo: {
+    title: "Monster Hunter Wilds",
+    developer: "Capcom",
+    publisher: "Capcom",
+    releaseDate: "2025-02-28",
+    platforms: ["PC", "PS5", "Xbox Series X/S"],
+    genre: ["Action RPG", "Cooperação", "Sobrevivência"],
+    price: 69.99,
+    metacriticScore: 88
+  },
+  seoMeta: {
+    metaTitle: "Monster Hunter Wilds – Guia Estratégico de Caça | Universo Pixels",
+    metaDescription: "Aprenda técnicas avançadas de Monster Hunter Wilds: como trocar armas, usar acampamentos pop‑up e explorar pontos fracos dos monstros.",
+    keywords: ["monster hunter wilds", "guia", "caça", "capcom", "action rpg"],
+    ogImage: "/assets/blog/mh-wilds-og.webp"
+  },
+  featured: true,
+  status: "published",
+  views: 0,
+  likes: 0
+}
+
 
 
 
