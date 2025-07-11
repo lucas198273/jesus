@@ -8,6 +8,7 @@ export interface BlogPost {
   content: string;
   featuredImage: string;
   gallery?: string[];
+  videos?: string[];
   category: 'review' | 'news' | 'guide' | 'opinion';
   tags: string[];
   author: {
@@ -74,6 +75,9 @@ export const blogPosts: BlogPost[] = [
     <p><small>Fonte: Polygon (10/06/2025), GameBlast (10/06/2025), GameInform­er (16/05/2025), Universo Nintendo (10/06/2025)</small></p>
   `,
   featuredImage: "/assets/lost/lost.png",
+  videos: [
+    "4O7ZRXp56dc"
+  ],    
   category: "review",
   tags: ["lost in random", "eternal die", "roguelike", "hades-like", "review 2025"],
   author: {
@@ -504,6 +508,9 @@ export const blogPosts: BlogPost[] = [
     "/assets/doom/doom.jpg",
    "/assets/doom/doom.jpg",
    "/assets/doom/doom.jpg",
+  ],
+  videos: [
+"d2wIMCybK98","ZxwwwN1C8lw"
   ],
   category: "review",
   tags: ["doom the dark ages", "doom medieval", "review fps", "2025 game"],

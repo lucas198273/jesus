@@ -1,7 +1,7 @@
 import { useParams, useNavigate, Link } from "react-router-dom";
 import { useState, useEffect, useMemo } from "react";
-import {  getPostBySlug, getPostsByCategory, getPostsByTag, getPostById } from "../data/blogPosts";
-import { useSEO } from "../hooks/UseSEO";
+import { getPostBySlug, getPostsByCategory, getPostsByTag, getPostById } from "../data/blogPosts";
+import { SEO } from "../components/SEO/SEO";
 import type { BlogPost } from "../data/blogPosts";
 import DOMPurify from "dompurify";
 import { ArrowLeft, Clock, Star } from "lucide-react";
@@ -30,19 +30,6 @@ const PostDetailPage: React.FC = () => {
     AOS.init({ duration: 800, once: true });
   }, []);
 
-  useSEO(
-    post ? post.seoMeta.metaTitle : "Post de Jogos | GameHub",
-    post ? post.seoMeta.metaDescription : "Leia reviews, guias e notícias sobre seus jogos favoritos no GameHub.",
-    post
-      ? [
-          { property: "og:title", content: post.seoMeta.metaTitle },
-          { property: "og:description", content: post.seoMeta.metaDescription },
-          { property: "og:image", content: post.seoMeta.ogImage },
-          { name: "twitter:card", content: "summary_large_image" },
-        ]
-      : []
-  );
-
   const relatedPosts = useMemo(() => {
     if (!post) return [];
     const byCategory = getPostsByCategory(post.category).filter((p) => p.slug !== slug);
@@ -65,8 +52,52 @@ const PostDetailPage: React.FC = () => {
     );
   }
 
+  // Structured data for BlogPosting schema with VideoObject
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: post.title,
+    description: post.excerpt,
+    author: {
+      "@type": "Person",
+      name: post.author.name,
+    },
+    datePublished: post.publishedAt,
+    image: post.featuredImage,
+    publisher: {
+      "@type": "Organization",
+      name: "GameHub",
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `${window.location.origin}/posts/${post.slug}`,
+    },
+    ...(post.videos && post.videos.length > 0 && {
+      video: post.videos.map((videoId, index) => ({
+        "@type": "VideoObject",
+        name: `${post.title} - Vídeo ${index + 1}`,
+        description: `Vídeo relacionado a ${post.title}`,
+        embedUrl: `https://www.youtube.com/embed/${videoId}`,
+        thumbnailUrl: `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`,
+        uploadDate: post.publishedAt,
+        publisher: {
+          "@type": "Organization",
+          name: "GameHub",
+        },
+      })),
+    }),
+  };
+
   return (
     <div className="pt-24 bg-primary text-text min-h-screen">
+      <SEO
+        title={post.seoMeta.metaTitle || `${post.title} | GameHub`}
+        description={post.seoMeta.metaDescription || post.excerpt}
+        image={post.seoMeta.ogImage || post.featuredImage}
+        canonical={`${window.location.origin}/posts/${post.slug}`}
+        schema={schema}
+      />
+
       <article className="px-4 max-w-4xl mx-auto space-y-8">
         <header className="text-center" data-aos="fade-up">
           <h1 className="text-4xl font-bold text-accent2 mb-4">{post.title}</h1>
@@ -120,6 +151,26 @@ const PostDetailPage: React.FC = () => {
               {post.gameInfo.metacriticScore && (
                 <div><strong>Metacritic:</strong> {post.gameInfo.metacriticScore}/100</div>
               )}
+            </div>
+          </section>
+        )}
+
+        {post.videos && post.videos.length > 0 && (
+          <section className="bg-secondary p-6 rounded-lg shadow-lg" data-aos="fade-up" data-aos-delay="250">
+            <h2 className="text-2xl font-semibold text-text mb-4">Vídeos</h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              {post.videos.map((videoId, index) => (
+                <div key={index} className="relative w-full" style={{ paddingBottom: "56.25%" /* 16:9 aspect ratio */ }}>
+                  <iframe
+                    src={`https://www.youtube.com/embed/${videoId}`}
+                    title={`Vídeo ${index + 1} de ${post.title}`}
+                    className="absolute top-0 left-0 w-full h-full rounded-lg shadow"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    loading="lazy"
+                  />
+                </div>
+              ))}
             </div>
           </section>
         )}

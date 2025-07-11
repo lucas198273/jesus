@@ -47,19 +47,20 @@ export default function Header() {
           <Link to="/" className="hover:text-[#E94560]">Início</Link>
           <Link to="/blog" className="hover:text-[#E94560]">Blog</Link>
           <Link to="/contact" className="hover:text-[#E94560]">Contato</Link>
+          <Link to="/brindes" className="hover:text-[#E94560]">Brindes</Link>
         </nav>
 
         {/* Logo center */}
         <Link
           to="/"
           className="absolute left-1/2 transform -translate-x-1/2 flex items-center"
-          aria-label="Home GameHub"
+          aria-label="Home Universo Pixels"
         >
           <div className="w-12 h-12 bg-gradient-to-br from-[#E94560] to-[#1A1A2E] rounded-lg flex items-center justify-center">
             <span className="text-white font-bold text-xl">🎮</span>
           </div>
           <div className="ml-2 text-[#EAEAEA] font-bold text-xl">
-            Game<span className="text-[#E94560]">Hub</span>
+            Universo <span className="text-[#E94560]">Pixels</span>
           </div>
         </Link>
 
@@ -160,6 +161,7 @@ export default function Header() {
           <Link to="/" onClick={() => setMenuOpen(false)} className="block text-[#EAEAEA]">Início</Link>
           <Link to="/blog" onClick={() => setMenuOpen(false)} className="block text-[#EAEAEA]">Blog</Link>
           <Link to="/contact" onClick={() => setMenuOpen(false)} className="block text-[#EAEAEA]">Contato</Link>
+          <Link to="/brindes" onClick={() => setMenuOpen(false)} className="block text-[#EAEAEA]">Brindes</Link>
         </nav>
       )}
     </header>

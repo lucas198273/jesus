@@ -1,6 +1,7 @@
 import { useState, useEffect, useMemo } from "react";
 import { Link } from "react-router-dom";
 import { ArrowUp } from "lucide-react";
+import { Helmet } from "react-helmet-async"; // Import Helmet
 import { getPostsByCategory, getFeaturedPosts } from "../data/blogPosts";
 import type { BlogPost } from "../data/blogPosts";
 
@@ -100,23 +101,33 @@ const BlogPage = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
-  useEffect(() => {
-    document.title = "Blog de Jogos - Reviews, Guias e Notícias | GameHub";
-    const metaDescription = document.querySelector('meta[name="description"]');
-    if (metaDescription) {
-      metaDescription.setAttribute(
-        "content",
-        "Explore nosso blog de jogos com reviews detalhadas, guias completos e as últimas notícias sobre games. Descubra tudo sobre seus jogos favoritos!"
-      );
-    }
-  }, []);
-
   const handleFilterChange = (category: Category) => {
     setSelectedCategory(category);
   };
 
+  // Dynamic meta descriptions based on selected category
+  const metaDescriptions: Record<Category, string> = {
+    featured: "Descubra os posts em destaque do GameHub, com reviews, guias e notícias sobre seus jogos favoritos!",
+    review: "Leia reviews detalhadas dos últimos lançamentos de jogos no blog do GameHub.",
+    guide: "Encontre guias completos e dicas para melhorar sua experiência nos jogos no GameHub.",
+    news: "Fique por dentro das últimas notícias e atualizações do mundo dos jogos no GameHub.",
+    opinion: "Explore opiniões e análises sobre jogos e tendências no blog do GameHub."
+  };
+
   return (
     <div className="relative pt-24 bg-primary text-text">
+      <Helmet>
+        <title>Blog de Jogos - {selectedCategory.charAt(0).toUpperCase() + selectedCategory.slice(1)} | GameHub</title>
+        <meta name="description" content={metaDescriptions[selectedCategory]} />
+        <meta name="keywords" content={`jogos, ${selectedCategory}, reviews, guias, notícias, GameHub`} />
+        <meta name="robots" content="index, follow" />
+        <meta property="og:title" content={`Blog de Jogos - ${selectedCategory.charAt(0).toUpperCase() + selectedCategory.slice(1)} | GameHub`} />
+        <meta property="og:description" content={metaDescriptions[selectedCategory]} />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={window.location.href} />
+        <meta property="og:site_name" content="GameHub" />
+      </Helmet>
+
       <section className="px-4 max-w-7xl mx-auto">
         <h1 className="text-3xl font-bold text-accent2 mb-10 text-center">Blog de Jogos</h1>
 

@@ -20,11 +20,11 @@ const SearchPage = () => {
   }, [results]);
 
   useSEO(
-    `Resultados para "${query}" | GameHub`,
-    `Veja os resultados da busca por "${query}" no GameHub, incluindo reviews, guias e notícias sobre jogos.`,
+    `Resultados para "${query}" | Universo Pixels`,
+    `Veja os resultados da busca por "${query}" no Universo Pixels, incluindo reviews, guias e notícias sobre jogos.`,
     [
-      { property: "og:title", content: `Resultados para "${query}" | GameHub` },
-      { property: "og:description", content: `Veja os resultados da busca por "${query}" no GameHub.` },
+      { property: "og:title", content: `Resultados para "${query}" | Universo Pixels` },
+      { property: "og:description", content: `Veja os resultados da busca por "${query}" no Universo Pixels.` },
       { name: "twitter:card", content: "summary_large_image" },
     ]
   );
