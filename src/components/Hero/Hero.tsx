@@ -72,14 +72,7 @@ export default function Hero() {
             </button>
           </div>
 
-          <div className="flex gap-8 mt-8 pt-6 border-t border-[#1A1A2E]">
-            {["500+", "1000+", "50+"].map((stat, index) => (
-              <div key={index} className="text-center">
-                <div className="text-2xl font-bold text-[#E94560]">{stat}</div>
-                <div className="text-sm text-[#EAEAEA]/60">{["Reviews", "Notícias", "Guias"][index]}</div>
-              </div>
-            ))}
-          </div>
+      
         </div>
 
         <div className="w-full md:w-1/2 flex justify-center">

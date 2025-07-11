@@ -50,19 +50,18 @@ export default function Header() {
           <Link to="/brindes" className="hover:text-[#E94560]">Brindes</Link>
         </nav>
 
-        {/* Logo center */}
-        <Link
-          to="/"
-          className="absolute left-1/2 transform -translate-x-1/2 flex items-center"
-          aria-label="Home Universo Pixels"
-        >
-          <div className="w-12 h-12 bg-gradient-to-br from-[#E94560] to-[#1A1A2E] rounded-lg flex items-center justify-center">
-            <span className="text-white font-bold text-xl">🎮</span>
-          </div>
-          <div className="ml-2 text-[#EAEAEA] font-bold text-xl">
-            Universo <span className="text-[#E94560]">Pixels</span>
-          </div>
-        </Link>
+     {/* Logo center */}
+<Link
+  to="/"
+  className="absolute left-1/2 transform -translate-x-1/2 flex items-center"
+  aria-label="Home Universo Pixels"
+>
+  <img
+    src="/assets/logo.webp" // substitua pelo caminho correto da sua logo
+    alt="Universo Pixels Logo"
+    className="w-18 h-auto object-contain rounded-xl"
+  />
+</Link>
 
         {/* Search button mobile */}
         <button
