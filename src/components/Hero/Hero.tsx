@@ -58,14 +58,14 @@ export default function Hero() {
 
           <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
             <button
-              onClick={() => window.location.href = "/reviews"}
+              onClick={() => window.location.href = "/brindes"}
               className="px-6 py-3 md:px-8 md:py-4 bg-gradient-to-r from-[#E94560] to-[#FF6B9D] hover:from-[#FF6B9D] hover:to-[#E94560] transition-all duration-300 text-white font-semibold rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105"
             >
-              Ver Reviews
+              Ver Brindes
             </button>
             
             <button
-              onClick={() => window.location.href = "/noticias"}
+              onClick={() => window.location.href = "/blog"}
               className="px-6 py-3 md:px-8 md:py-4 bg-transparent border-2 border-[#E94560] text-[#E94560] hover:bg-[#E94560] hover:text-white transition-all duration-300 font-semibold rounded-lg"
             >
               Últimas Notícias

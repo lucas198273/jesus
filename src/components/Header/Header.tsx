@@ -48,6 +48,7 @@ export default function Header() {
           <Link to="/blog" className="hover:text-[#E94560]">Blog</Link>
           <Link to="/contact" className="hover:text-[#E94560]">Contato</Link>
           <Link to="/brindes" className="hover:text-[#E94560]">Brindes</Link>
+          <Link to="/politicas" className="hover:text-[#E94560]">Politicas</Link>
         </nav>
 
      {/* Logo center */}
@@ -161,6 +162,7 @@ export default function Header() {
           <Link to="/blog" onClick={() => setMenuOpen(false)} className="block text-[#EAEAEA]">Blog</Link>
           <Link to="/contact" onClick={() => setMenuOpen(false)} className="block text-[#EAEAEA]">Contato</Link>
           <Link to="/brindes" onClick={() => setMenuOpen(false)} className="block text-[#EAEAEA]">Brindes</Link>
+          <Link to="/politicas" onClick={() => setMenuOpen(false)} className="block text-[#EAEAEA]">Politicas</Link>
         </nav>
       )}
     </header>
