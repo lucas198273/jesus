@@ -50,16 +50,16 @@ export const blogPosts: BlogPost[] = [
   excerpt: "Lost in Random: The Eternal Die é um roguelike estilo Hades com estética Burtonesca, mecânicas de dado e combate estratégico que brilham em 2025.",
   content: `
     <h2>Hades‑Like com Toque Sombrio e Surpreendente</h2>
-    <p><strong>Lost in Random: The Eternal Die</strong>, spin‑off da aventura de 2021, aposta num roguelike ágil e desafiador, inspirado em Hades, mantendo o charme peculiar de sua ambientação :contentReference[oaicite:1]{index=1}.</p>
+    <p><strong>Lost in Random: The Eternal Die</strong>, spin‑off da aventura de 2021, aposta num roguelike ágil e desafiador, inspirado em Hades, mantendo o charme peculiar de sua ambientação</p>
 
     <h3>Combate e Mecânicas Estratégicas</h3>
-    <p>Aleksandra usa quatro armas principais (espada, martelo, lança e arco), complementadas por cartas e seu dado companheiro, o Fortune — que adiciona variabilidade e timing tático. A estratégia é reforçada por mais de 100 relíquias e mecânicas de matching de cores para buffs :contentReference[oaicite:2]{index=2}.</p>
+    <p>Aleksandra usa quatro armas principais (espada, martelo, lança e arco), complementadas por cartas e seu dado companheiro, o Fortune — que adiciona variabilidade e timing tático. A estratégia é reforçada por mais de 100 relíquias e mecânicas de matching de cores para buffs.</p>
 
     <h3>Visual e Áudio de Excelência</h3>
-    <p>Com estética inspirada por Tim Burton, a direção de arte é um dos destaques — "gorgeous appearance", com arte em estilo “stop motion” e sons envolventes :contentReference[oaicite:3]{index=3}. A dublagem e trilha sonora completam a imersão :contentReference[oaicite:4]{index=4}.</p>
+    <p>Com estética inspirada por Tim Burton, a direção de arte é um dos destaques — "gorgeous appearance", com arte em estilo “stop motion” e sons envolventes. A dublagem e trilha sonora completam a imersão .</p>
 
     <h3>Dificuldade e Acessibilidade</h3>
-    <p>O combate é fluido e gratificante, com desafio crescente — embora o diretor reconheça que o jogo poderia ser ~10% mais difícil :contentReference[oaicite:5]{index=5}. Existe opção de Easy Mode e suporte a save/fast‑travel, tornando‑o mais acessível :contentReference[oaicite:6]{index=6}.</p>
+    <p>O combate é fluido e gratificante, com desafio crescente — embora o diretor reconheça que o jogo poderia ser ~10% mais difícil . Existe opção de Easy Mode e suporte a save/fast‑travel, tornando‑o mais acessível.</p>
 
     <h3>Pontos Fortes vs Limitações</h3>
     <ul>
@@ -329,7 +329,7 @@ export const blogPosts: BlogPost[] = [
   excerpt: "Kingdom Come: Deliverance 2 chega em 2025 como um RPG medieval ambicioso e imersivo, superando expectativas com sistemas complexos e mundo vivo.",
   content: `
     <h2>Imersão Total no Mundo Medieval</h2>
-    <p><strong>Kingdom Come: Deliverance 2</strong> é descrito como "um triunfo, tecendo sistemas complexos em um mundo medieval incrivelmente imersivo" – destacando-se como um dos melhores RPGs do ano até agora :contentReference[oaicite:1]{index=1}.</p>
+    <p><strong>Kingdom Come: Deliverance 2</strong> é descrito como "um triunfo, tecendo sistemas complexos em um mundo medieval incrivelmente imersivo" – destacando-se como um dos melhores RPGs do ano até agora</p>
 
     <h3>Jogabilidade e Narrativa</h3>
     <p>O jogo mantém liberdade de escolha, incentivando exploração livre em campos, tavernas e emboscadas. O combate desafiador e realista eleva a experiência.</p>
@@ -340,7 +340,7 @@ export const blogPosts: BlogPost[] = [
     <h3>Conclusão</h3>
     <p>Um RPG medieval profundo e elegante – ideal para quem busca um sistema robusto e mundo vivido.</p>
 
-    <p><small>Fonte: TechRadar – 4 de julho de 2025 :contentReference[oaicite:2]{index=2}</small></p>
+    <p><small>Fonte: TechRadar – 4 de julho de 2025</small></p>
   `,
   featuredImage: "/assets/king/king.jpg",
   category: "review",
@@ -379,7 +379,7 @@ export const blogPosts: BlogPost[] = [
   excerpt: "FBC: Firebreak traz um shooter tático com DNA de Control, mas peca em ritmo lento no início—vale a experiência cooperativa?",
   content: `
     <h2>Estreia da Remedy em Multiplayer</h2>
-    <p>O spin-off <strong>FBC: Firebreak</strong> marca a entrada da Remedy no live-service, com jogabilidade sólida embora lenta nas primeiras horas :contentReference[oaicite:3]{index=3}.</p>
+    <p>O spin-off <strong>FBC: Firebreak</strong> marca a entrada da Remedy no live-service, com jogabilidade sólida embora lenta nas primeiras horas.</p>
 
     <h3>Gameplay e Progressão</h3>
     <p>A construção de classes é recompensadora, e o tiroteio funciona bem – apesar de um início arrastado, o jogo se liberta quando o ritmo melhora.</p>
@@ -390,7 +390,7 @@ export const blogPosts: BlogPost[] = [
     <h3>Conclusão</h3>
     <p>Recomendado para fãs do universo Remedy, especialmente em modo cooperativo. Uma experiência narrativa sólida, ainda que com ritmo gradual.</p>
 
-    <p><small>Fonte: GameSpot – avaliação com nota 8/10 :contentReference[oaicite:4]{index=4}</small></p>
+    <p><small>Fonte: GameSpot – avaliação com nota 8/10 </small></p>
   `,
   featuredImage: "/assets/fbc/fbc.jpg",
   category: "review",
@@ -429,7 +429,7 @@ export const blogPosts: BlogPost[] = [
   excerpt: "Doom: The Dark Ages transporta a brutalidade clássica da franquia para um cenário medieval, com novas armas, combates estratégicos e veículos poderosos.",
   content: `
     <h2>Reimaginação Medieval do Doom Slayer</h2>
-    <p><strong>Doom: The Dark Ages</strong> leva o Doom Slayer a um cenário medieval em combate pesado, com armas corpo-a-corpo e escudo-serra para parry táticos :contentReference[oaicite:5]{index=5}.</p>
+    <p><strong>Doom: The Dark Ages</strong> leva o Doom Slayer a um cenário medieval em combate pesado, com armas corpo-a-corpo e escudo-serra para parry táticos .</p>
 
     <h3>Arsenal e Combate</h3>
     <p>Adição de escudo-serra, maça e flail trazem combate mais estratégico. Mecânica de slow-motion nos glory kills acrescenta peso e estilo.</p>
@@ -438,7 +438,7 @@ export const blogPosts: BlogPost[] = [
     <p>Introduz pilotagem de veículos, como dragões cibernéticos e mechs gigantes, expandindo o escopo do combate clássico.</p>
 
     <h3>Recepção e Impacto Inicial</h3>
-    <p>Lançado em 15 de maio de 2025 no Game Pass, alcançou 3 milhões de jogadores na primeira semana, recebendo críticas positivas :contentReference[oaicite:6]{index=6}.</p>
+    <p>Lançado em 15 de maio de 2025 no Game Pass, alcançou 3 milhões de jogadores na primeira semana, recebendo críticas positivas.</p>
 
     <p><small>Fonte: Wikipedia – atualização em julho de 2025 :contentReference[oaicite:7]{index=7}</small></p>
   `,
@@ -549,7 +549,7 @@ export const blogPosts: BlogPost[] = [
   excerpt: "Descubra os segredos de Assassin’s Creed Shadows com este guia completo: desde combate a exploração, ideal para novos jogadores.",
   content: `
     <h2>Entrando na Era de Naoe e Yasuke</h2>
-    <p>Com lançamento em 14 de fevereiro de 2025, Assassin’s Creed Shadows traz um mundo aberto ambientado no Japão Feudal. Este guia vai ajudá-lo a entender as mecânicas iniciais e se adaptar ao estilo único do jogo :contentReference[oaicite:1]{index=1}.</p>
+    <p>Com lançamento em 14 de fevereiro de 2025, Assassin’s Creed Shadows traz um mundo aberto ambientado no Japão Feudal. Este guia vai ajudá-lo a entender as mecânicas iniciais e se adaptar ao estilo único do jogo</p>
 
     <h3>Combate e Arquitetura Stealth</h3>
     <p>Explore o sistema de combate refinado, que mistura furtividade e combate direto. Dicas sobre armas recomendadas e upgrades para Yasuke e Naoe.</p>
@@ -602,16 +602,16 @@ export const blogPosts: BlogPost[] = [
   excerpt: "Domine as terras selvagens de Wilds com este guia estratégico: caças, equipamentos e dicas para sobreviver aos monstros mais imponentes.",
   content: `
     <h2>Bem-vindo ao Desafio das Terras Proibidas</h2>
-    <p>Lançado em 28 de fevereiro de 2025, Monster Hunter Wilds expande a fórmula da série com um mundo mais interativo e profundo :contentReference[oaicite:1]{index=1}.</p>
+    <p>Lançado em 28 de fevereiro de 2025, Monster Hunter Wilds expande a fórmula da série com um mundo mais interativo e profundo</p>
 
     <h3>Troca de Armas Estratégica</h3>
-    <p>A novidade é a possibilidade de carregar duas armas e trocá-las usando seu Seikrets, criando combos adaptáveis conforme o monstro enfrentado :contentReference[oaicite:2]{index=2}.</p>
+    <p>A novidade é a possibilidade de carregar duas armas e trocá-las usando seu Seikrets, criando combos adaptáveis conforme o monstro enfrentado.</p>
 
     <h3>Acampamentos Pop-Up & Dinâmica de Ambiente</h3>
-    <p>Monte acampamentos em áreas-chave para restabelecer recursos no campo, sem precisar retornar à base :contentReference[oaicite:3]{index=3}.</p>
+    <p>Monte acampamentos em áreas-chave para restabelecer recursos no campo, sem precisar retornar à base.</p>
 
     <h3>Sistema de Feridas e Pontos Fracos</h3>
-    <p>O novo sistema de feridas permite atacar pontos vulneráveis específicos dos monstros para causar dano extra :contentReference[oaicite:4]{index=4}.</p>
+    <p>O novo sistema de feridas permite atacar pontos vulneráveis específicos dos monstros para causar dano extra .</p>
 
     <p><small>Fonte: <a href="https://en.wikipedia.org/wiki/Monster_Hunter_Wilds" target="_blank" rel="noopener noreferrer">Wikipedia (2025)</a></small></p>
   `,
@@ -657,13 +657,13 @@ export const blogPosts: BlogPost[] = [
   excerpt: "Os jogos AA, de orçamento médio, estão ganhando destaque e entregando experiências inovadoras e de alta qualidade em 2025.",
   content: `
     <h2>O renascimento dos jogos AA</h2>
-    <p>Em 2025, vimos títulos como <strong>Clair Obscur: Expedition 33</strong> e <strong>Split Fiction</strong> liderarem indicações ao Game of the Year, mostrando que jogos desenvolvidos por equipes menores podem oferecer qualidade de AAA sem os riscos exorbitantes — aclamados com notas acima de 90 no Metacritic e OpenCritic :contentReference[oaicite:1]{index=1}.</p>
+    <p>Em 2025, vimos títulos como <strong>Clair Obscur: Expedition 33</strong> e <strong>Split Fiction</strong> liderarem indicações ao Game of the Year, mostrando que jogos desenvolvidos por equipes menores podem oferecer qualidade de AAA sem os riscos exorbitantes — aclamados com notas acima de 90 no Metacritic e OpenCritic</p>
 
     <h3>Produção sustentável e criativa</h3>
     <p>Esses projetos custam menos e trazem equipes enxutas, focando na inovação, narrativa e arte, sem a burocracia dos estúdios gigantescos. É um modelo mais sustentável que agrada tanto desenvolvedores quanto jogadores.</p>
 
     <h3>O impacto no futuro do setor</h3>
-    <p>Se Clair Obscur ganhar um grande prêmio, pode marcar uma mudança definitiva na percepção entre indie e AAA. Isso incentiva studios menores a investirem em suas visões criativas, sem a pressão de atingir metas astronômicas de vendas :contentReference[oaicite:2]{index=2}.</p>
+    <p>Se Clair Obscur ganhar um grande prêmio, pode marcar uma mudança definitiva na percepção entre indie e AAA. Isso incentiva studios menores a investirem em suas visões criativas, sem a pressão de atingir metas astronômicas de vendas.</p>
   `,
   featuredImage: "/assets/aa/aa.jpg",
   category: "opinion",
