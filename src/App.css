@@ -9,7 +9,14 @@ html, body {
   box-sizing: border-box; /* Garante que o padding e a borda não aumentem a largura total */
 }
 
-/* Adicionando um estilo para o viewport */
-@viewport {
-  zoom: 1; /* Impede o zoom involuntário */
+/* Certifique-se de que todos os contêineres principais não excedam a largura da tela */
+.container {
+  max-width: 100%; /* Garante que o contêiner não exceda a largura da tela */
+  overflow: hidden; /* Evita overflow em contêineres */
+}
+
+/* Para imagens e outros elementos que podem causar overflow */
+img, video {
+  max-width: 100%; /* Garante que imagens e vídeos não excedam a largura do contêiner */
+  height: auto; /* Mantém a proporção */
 }
