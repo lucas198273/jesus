@@ -59,7 +59,7 @@ export default function Header() {
   <img
     src="/assets/logo.webp" // substitua pelo caminho correto da sua logo
     alt="Universo Pixels Logo"
-    className="w-18 h-auto object-contain rounded-xl"
+    className="w-16 h-auto object-contain rounded-xl"
   />
 </Link>
 
