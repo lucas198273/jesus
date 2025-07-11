@@ -670,7 +670,7 @@ export const blogPosts: BlogPost[] = [
   tags: ["AA games", "indie", "gaming trends", "2025"],
   author: {
     name: "Rafael Lima",
-    avatar: "/assets/authors/rafael-lima.jpg",
+    avatar: "/assets/aa/aa.jpg",
     bio: "Analista de mercado gamer e entusiasta de narrativas interativas.",
   },
   publishedAt: "2025-07-11T12:00:00Z",
@@ -679,7 +679,7 @@ export const blogPosts: BlogPost[] = [
     metaTitle: "O Renascimento dos Jogos AA em 2025 | Universo Pixels",
     metaDescription: "Entenda por que jogos AA estão dominando 2025 e o que isso significa para a indústria.",
     keywords: ["AA games", "indústria gamer 2025", "Clair Obscur", "Split Fiction"],
-    ogImage: "/assets/blog/aa-trend-og.webp"
+    ogImage: "/assets/aa/aa.jpg"
   },
   featured: false,
   status: "published",
