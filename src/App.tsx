@@ -16,6 +16,7 @@ import Brindes from "./pages/Brindes";
 // HelmetProvider no topo
 import { HelmetProvider } from 'react-helmet-async';
 import Politicas from "./pages/Politicas";
+import Amazon from "./pages/Amazon";
 
 function AppContent() {
   return (
@@ -46,6 +47,7 @@ function AppContent() {
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/brindes" element={<Brindes />} />
         <Route path="/politicas" element={<Politicas />} />
+        <Route path="/afiliados" element={<Amazon />} />
       </Routes>
       <Footer />
     </div>
