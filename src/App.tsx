@@ -16,6 +16,7 @@ import Brindes from "./pages/Brindes";
 import { HelmetProvider } from "react-helmet-async";
 import Politicas from "./pages/Politicas";
 import Amazon from "./pages/Amazon";
+import BrindesPromo from "./components/BrindesPromo/BrindesPromo";
 
 function AppContent() {
   return (
@@ -27,7 +28,7 @@ function AppContent() {
           element={
             <main className="pt-20 min-h-screen flex flex-col overflow-x-hidden">
               <Hero />
-
+              <BrindesPromo />
               {/* Substituído <div className="container"> */}
               <div className="max-w-7xl mx-auto px-4">
                 <h2 className="text-2xl font-bold mb-6 text-center text-green-700">
@@ -64,7 +65,7 @@ function AppContent() {
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/brindes" element={<Brindes />} />
         <Route path="/politicas" element={<Politicas />} />
-        <Route path="/afiliados" element={<Amazon />} />
+        <Route path="/produtos" element={<Amazon />} />
       </Routes>
       <Footer />
     </div>
