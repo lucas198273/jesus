@@ -35,7 +35,7 @@ function AppContent() {
                 </h2>
               </div>
 
-<div className="flex overflow-x-auto max-w-full">
+
             <section className="py-10 overflow-x-hidden">
                 <PostCarouselSection title="Posts em Destaque" />
               </section>
@@ -51,7 +51,7 @@ function AppContent() {
               <section className="py-10 overflow-x-hidden">
                 <PostCarouselSection category="news" title="Notícias do Mundo dos Games" />
               </section>
-</div>
+
 
    
             </main>
