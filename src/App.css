@@ -1,22 +1,14 @@
+/* index.css */
+
 html, body {
   width: 100%;
-  overflow-x: hidden; /* Evita o overflow horizontal */
-  margin: 0; /* Remove margens padrão */
-  padding: 0; /* Remove preenchimento padrão */
+  overflow-x: hidden; /* Evita qualquer overflow horizontal */
+  margin: 0;
+  padding: 0;
 }
 
 * {
-  box-sizing: border-box; /* Garante que o padding e a borda não aumentem a largura total */
+  box-sizing: border-box;
 }
 
-/* Certifique-se de que todos os contêineres principais não excedam a largura da tela */
-.container {
-  max-width: 100%; /* Garante que o contêiner não exceda a largura da tela */
-  overflow: hidden; /* Evita overflow em contêineres */
-}
-
-/* Para imagens e outros elementos que podem causar overflow */
-img, video {
-  max-width: 100%; /* Garante que imagens e vídeos não excedam a largura do contêiner */
-  height: auto; /* Mantém a proporção */
-}
+/* Removido o .container customizado para evitar conflito com Tailwind */
