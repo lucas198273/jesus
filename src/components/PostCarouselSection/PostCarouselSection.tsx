@@ -64,16 +64,16 @@ export default function PostCarouselSection({ category, title }: PostCarouselSec
 
       <button
         onClick={() => emblaApi?.scrollPrev()}
-        className="absolute top-1/2 left-2 -translate-y-1/2 bg-accent2 text-text p-2 rounded-full z-10 hover:bg-accent"
+        className="absolute  top-1/2 left-2 -translate-y-1/2 bg-accent2 text-text p-2 rounded-full z-10 hover:bg-accent"
         aria-label="Post anterior"
-      >
+      > Voltar
         <ChevronLeft size={20} />
       </button>
       <button
         onClick={() => emblaApi?.scrollNext()}
         className="absolute top-1/2 right-2 -translate-y-1/2 bg-accent2 text-text p-2 rounded-full z-10 hover:bg-accent"
         aria-label="Próximo post"
-      >
+      > Proximo
         <ChevronRight size={20} />
       </button>
     </div>
