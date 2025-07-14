@@ -30,14 +30,10 @@ function AppContent() {
               <Hero />
               <BrindesPromo />
               {/* Substituído <div className="container"> */}
-              <div className="max-w-7xl mx-auto px-4">
-                <h2 className="text-2xl font-bold mb-6 text-center text-green-700">
-                  Últimos Posts
-                </h2>
-              </div>
+              
 
 
-            <section className="py-10 overflow-x-hidden">
+            <section className="py-10 overflow-x-hidden mt-14">
                 <PostCarouselSection title="Posts em Destaque" />
               </section>
 

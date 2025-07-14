@@ -25,7 +25,7 @@ export default function BrindesPromo() {
       </Helmet>
 
       <section
-        className="bg-white rounded-2xl shadow mt-6 p-6 max-w-xl mx-auto text-center"
+        className="bg-white rounded-2xl shadow mt-20 p-6 max-w-xl mx-auto text-center"
         aria-labelledby="brindes-heading"
         role="region"
       >
