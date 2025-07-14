@@ -156,15 +156,19 @@ export default function Header() {
         </form>
       )}
 
-      {/* Mobile menu */}
-      {menuOpen && (
-        <nav className="md:hidden fixed top-20 w-full bg-[#0F0F23]/95 p-6 space-y-4 z-40">
-          <Link to="/" onClick={() => setMenuOpen(false)} className="block text-[#EAEAEA]">Início</Link>
-          <Link to="/blog" onClick={() => setMenuOpen(false)} className="block text-[#EAEAEA]">Blog</Link>
-          <Link to="/contact" onClick={() => setMenuOpen(false)} className="block text-[#EAEAEA]">Contato</Link>
-          <Link to="/brindes" onClick={() => setMenuOpen(false)} className="block text-[#EAEAEA]">Brindes</Link>
-          <Link to="/politicas" onClick={() => setMenuOpen(false)} className="block text-[#EAEAEA]">Politicas</Link>
-          <Link to="/Produtos" onClick={() => setMenuOpen(false)} className="block text-[#EAEAEA]">Produtos</Link>
+        {/* Menu Mobile */}
+    
+       {menuOpen && (
+        <nav
+          className="fixed top-20 left-0 w-64 h-[calc(100vh-5rem)] bg-[#16213E] text-black shadow-lg md:hidden z-40 p-6 flex flex-col space-y-6"
+          data-aos="fade-right"
+        >
+          <Link to="/" onClick={() => setMenuOpen(false)} className="block text-[#EAEAEA] mb-4">Início</Link>
+          <Link to="/blog" onClick={() => setMenuOpen(false)} className="block text-[#EAEAEA] mb-4">Blog</Link>
+          <Link to="/contact" onClick={() => setMenuOpen(false)} className="block text-[#EAEAEA] mb-4">Contato</Link>
+          <Link to="/brindes" onClick={() => setMenuOpen(false)} className="block text-[#EAEAEA] mb-4">Brindes</Link>
+          <Link to="/politicas" onClick={() => setMenuOpen(false)} className="block text-[#EAEAEA] mb-4">Políticas</Link>
+          <Link to="/produtos" onClick={() => setMenuOpen(false)} className="block text-[#EAEAEA] mb-4">Produtos</Link>
         </nav>
       )}
     </header>
