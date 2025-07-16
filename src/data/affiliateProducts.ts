@@ -77,27 +77,55 @@ export const studyBibles: Product[] = [
 
 ];
 
-// Livros Cristãos / Teológicos
 export const biblicalBooks: Product[] = [
   {
-    title: "Teologia Sistemática - Wayne Grudem",
-    asin: "8527503279",
+    title: "Teologia Sistemática - Wayne Grudem (Edição Revisada e Ampliada)",
+    asin: "6559670163",
     affiliateTag: "ofertaspixels-20",
-    imageUrl: "https://m.media-amazon.com/images/I/71HRyzK0TPL._AC_SY679_.jpg",
-    customText: "Um guia completo e respeitado de teologia cristã.",
+    imageUrl: "https://m.media-amazon.com/images/I/51qVMmOMZfL._SY445_SX342_.jpg",
+    customText: "Versão mais atualizada da obra clássica de teologia sistemática de Wayne Grudem.",
   },
   {
-    title: "Manual Bíblico de Halley - Edição Atualizada",
-    asin: "857325570X",
+    title: "Manual Bíblico de Halley - Henry H. Halley",
+    asin: "8573675691",
     affiliateTag: "ofertaspixels-20",
-    imageUrl: "https://m.media-amazon.com/images/I/81zh8W4SG4L._AC_SY679_.jpg",
-    customText: "Panorama histórico, arqueológico e teológico da Bíblia.",
+    imageUrl: "https://m.media-amazon.com/images/I/41q7cjVl9bL._SY445_SX342_.jpg",
+    customText: "Manual com panorama histórico e arqueológico da Bíblia, essencial para estudantes.",
   },
   {
     title: "O Discípulo Radical - John Stott",
-    asin: "8577792842",
+    asin: "8577790444",
     affiliateTag: "ofertaspixels-20",
-    imageUrl: "https://m.media-amazon.com/images/I/71a6Yk6Ot+L._AC_SY679_.jpg",
-    customText: "Um chamado à vida cristã profunda e comprometida.",
+    imageUrl: "https://m.media-amazon.com/images/I/61QLR55mJ0L._SY466_.jpg",
+    customText: "Chamado à radicalidade na vivência do evangelho, por um dos maiores teólogos cristãos.",
   },
+  {
+    title: "A Cruz de Cristo - John Stott",
+    asin: "8573671467",
+    affiliateTag: "ofertaspixels-20",
+    imageUrl: "https://m.media-amazon.com/images/I/41JEI+teVxL._SX342_SY445_.jpg",
+    customText: "Uma profunda análise do significado da cruz na fé cristã.",
+  },
+  {
+    title: "A crucificação: entendendo a morte de Jesus Cristo",
+    asin: "6556895563",
+    affiliateTag: "ofertaspixels-20",
+    imageUrl: "https://m.media-amazon.com/images/I/51v7zYbvJcL._SY445_SX342_.jpg",
+    customText: "Obra que explora o contexto histórico e teológico da morte de Cristo.",
+  },
+  {
+    title: "A Verdade do Evangelho - Paul Washer",
+    asin: "6559880281",
+    affiliateTag: "ofertaspixels-20",
+    imageUrl: "https://m.media-amazon.com/images/I/51IAIpCyO+L._SY445_SX342_.jpg",
+    customText: "Uma exposição clara e fiel sobre a essência do evangelho bíblico.",
+  },
+  {
+  title: "A Supremacia de Cristo em um Mundo Pós-Moderno",
+  asin: "B084Z3NY83",
+  affiliateTag: "ofertaspixels-20",
+  imageUrl: "https://m.media-amazon.com/images/I/416Bb2WquLL._SY445_SX342_.jpg",
+  customText: "Uma coletânea de mensagens teológicas centradas em Cristo, relevantes para os desafios do mundo atual.",
+}
+
 ];
