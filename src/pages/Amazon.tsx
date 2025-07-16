@@ -4,22 +4,22 @@ import AffiliateCardList from "../components/AffiliateCardList/AffiliateCardList
 export default function Amazon() {
   return (
     <HelmetProvider>
-      <main className="min-h-screen bg-[#0F0F23]/95 pt-24 pb-12 px-4">
+      <main className="min-h-screen bg-[#F9F6F1] pt-28 pb-16 px-4">
         <Helmet>
-          <title>Ofertas de Produtos na Amazon | Apoie nosso site</title>
+          <title>Produtos Bíblicos na Amazon | Apoie Nosso Projeto</title>
           <meta
             name="description"
-            content="Descubra produtos em destaque na Amazon com nossos links de afiliado. Compre com segurança e apoie nosso projeto!"
+            content="Explore nossa seleção de produtos bíblicos como Bíblias de Estudo e livros teológicos. Compre pela Amazon e apoie nosso site com seu clique!"
           />
           <meta
             name="keywords"
-            content="amazon, ofertas, afiliados, produtos, comprar, ps5, ps4"
+            content="bíblia de estudo, livros cristãos, produtos bíblicos, teologia, amazon, afiliados"
           />
           <link rel="canonical" href="https://seusite.com.br/amazon" />
-          <meta property="og:title" content="Ofertas da Amazon com link de afiliado" />
+          <meta property="og:title" content="Produtos Bíblicos na Amazon" />
           <meta
             property="og:description"
-            content="Aproveite as melhores promoções em produtos PS4 e PS5 na Amazon com nosso link especial!"
+            content="Seleção especial de Bíblias e livros cristãos disponíveis na Amazon. Fortaleça sua fé com conteúdo confiável."
           />
           <meta
             property="og:image"
@@ -29,16 +29,20 @@ export default function Amazon() {
           <meta property="og:url" content="https://seusite.com.br/amazon" />
         </Helmet>
 
-        <section className="max-w-4xl mx-auto text-center mb-10">
-          <h1 className="text-4xl font-extrabold text-white drop-shadow mb-2">
-            Produtos em Oferta na Amazon
+        {/* Título e Introdução */}
+        <section className="max-w-5xl mx-auto text-center mb-12 px-4">
+          <h1 className="text-4xl sm:text-5xl font-extrabold text-[#2C2C2C] mb-4">
+            Produtos Bíblicos em Destaque
           </h1>
-          <p className="text-gray-300">
-            Aproveite essas ofertas e apoie nosso trabalho comprando com nossos links de afiliado.
+          <p className="text-lg sm:text-xl text-[#4C4C4C] max-w-2xl mx-auto">
+            Selecione materiais que edifiquem sua fé! Aqui você encontra Bíblias de estudo,
+            livros cristãos e outros recursos para seu crescimento espiritual. Compre pela Amazon
+            e nos ajude com seu clique.
           </p>
         </section>
 
-        <section className="max-w-6xl mx-auto">
+        {/* Lista de Produtos */}
+        <section className="max-w-7xl mx-auto px-2 sm:px-4">
           <AffiliateCardList />
         </section>
       </main>
