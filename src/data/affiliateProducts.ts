@@ -30,27 +30,51 @@ export const affiliateProductsStructuredData = () => {
 
 // Bíblias de Estudo
 export const studyBibles: Product[] = [
+
   {
-    title: "Bíblia de Estudo NAA - Letra Grande - Luxo Marrom",
-    asin: "6556551252",
+    title: "Bíblia de Estudo Plenitude - Capa Luxo Marrom",
+    asin: "6586996015",
     affiliateTag: "ofertaspixels-20",
-    imageUrl: "https://m.media-amazon.com/images/I/71StJ5O+f3L._AC_SY679_.jpg",
-    customText: "Uma das Bíblias mais completas para estudo bíblico, com linguagem atualizada.",
+    imageUrl: "https://m.media-amazon.com/images/I/51vj9DfUljL._SX342_SY445_.jpg",
+    customText: "Estudo profundo e edificante com comentários e recursos espirituais para o leitor cristão."
   },
   {
-    title: "Bíblia de Estudo Pentecostal - Capa Preta",
-    asin: "8577422092",
+    title: "Bíblia dos Reformadores - Capa Caramelo",
+    asin: "6586996937",
     affiliateTag: "ofertaspixels-20",
-    imageUrl: "https://m.media-amazon.com/images/I/81n0YPnNcvL._AC_SY679_.jpg",
-    customText: "Recurso essencial para quem deseja aprofundar-se na teologia pentecostal.",
+    imageUrl: "https://m.media-amazon.com/images/I/61r0NumUDwL._SY385_.jpg",
+    customText: "Inspirada na tradição reformada, ideal para aprofundar o conhecimento teológico."
   },
   {
-    title: "Bíblia de Estudo Aplicação Pessoal - NVT",
-    asin: "8578609733",
+    title: "Bíblia de Aplicação Pessoal para Meninos - Média",
+    asin: "B0DCHDCWWY",
     affiliateTag: "ofertaspixels-20",
-    imageUrl: "https://m.media-amazon.com/images/I/91OjrlcHkmL._AC_SY679_.jpg",
-    customText: "Ajuda a aplicar os ensinamentos bíblicos no dia a dia do cristão.",
+    imageUrl: "https://m.media-amazon.com/images/I/41AqZIk5VOL._SX342_SY445_.jpg",
+    customText: "Voltada para o público infantil, com aplicação prática dos ensinamentos bíblicos."
   },
+  {
+    title: "Bíblia Sagrada - Leão de Judá - NVI",
+    asin: "6586078636",
+    affiliateTag: "ofertaspixels-20",
+    imageUrl: "https://m.media-amazon.com/images/I/41fhEZe1B5L._SX342_SY445_.jpg",
+    customText: "Design imponente com o símbolo do Leão de Judá. Ideal para presentes e estudo."
+  },
+  {
+    title: "Bíblia Sagrada Gigante - Dourada - Linguagem de Hoje",
+    asin: "B0DB2JSWCJ",
+    affiliateTag: "ofertaspixels-20",
+    imageUrl: "https://m.media-amazon.com/images/I/31gyNssne5L._SY445_SX342_.jpg",
+    customText: "Letra gigante e fácil leitura com acabamento dourado. Uma excelente escolha devocional."
+  },
+  {
+    title: "Orações Quebram Maldições - John Eckhardt",
+    asin: "8561411686",
+    affiliateTag: "ofertaspixels-20",
+    imageUrl: "https://m.media-amazon.com/images/I/51pv774cuDL._SY445_SX342_.jpg",
+    customText: "Um guia de intercessão poderosa para romper maldições e restaurar vidas espirituais."
+  }
+
+
 ];
 
 // Livros Cristãos / Teológicos
