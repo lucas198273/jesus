@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import { affiliateCourses } from "../../data/affiliateCourses";
 import type { Product } from "../../data/affiliateProducts";
 import { biblicalBooks, studyBibles } from "../../data/affiliateProducts";
-
 export default function AffiliateSection() {
   const allProducts: Product[] = [...biblicalBooks, ...studyBibles];
 
@@ -51,7 +50,7 @@ export default function AffiliateSection() {
             ))}
           </div>
         </div>
-
+       
         {/* Produtos Afiliados */}
         <h2 className="text-3xl font-bold my-10 text-[#BFA875] text-center">
           Produtos Recomendados na Amazon
